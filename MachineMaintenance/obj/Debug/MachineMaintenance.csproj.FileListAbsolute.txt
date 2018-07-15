@@ -1,0 +1,133 @@
+D:\VT CP\FW\NidecMES\Dll\MachineMaintenance.dll.config
+D:\VT CP\FW\NidecMES\Dll\MachineMaintenance.dll
+D:\VT CP\FW\NidecMES\Dll\MachineMaintenance.pdb
+D:\VT CP\FW\NidecMES\Dll\vi\MachineMaintenance.resources.dll
+D:\VT CP\FW\NidecMES\Dll\vi-VN\MachineMaintenance.resources.dll
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Interop.VBIDE.dll
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csproj.ResolveComReference.cache
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AccountCodeForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.Account_WhForm.AccountCodeForm.AddAccountCodeForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddAcountMainForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AccountLocationForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.Account_WhForm.AccountLocationForm.AddAccountLocationForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddAssetForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AssetForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AccountMainForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddDetailPositionForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.DetailPositionForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddWareHouseMainForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WarehouseMainForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDocumentForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DocumentForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDrawForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DrawForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddJigRepairInformationForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.JigRepairInformationForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddRankForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.RankForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ProductionControllerForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddUpdateReportDownTimeFrom.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ReportDownTimeForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddUserLocationForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.UserLocationForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddWareHouseForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WareHouseForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddCommentDatalostVT.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddNewMachineVT.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMovingMachineVTForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WarehouseVTCheckForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.MovingMachineVTForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WarehouseVTForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMachineStatusForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddPlanWorkingStatusForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WorkingStatusForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Properties.Resources.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDocumentForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DocumentForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDrawForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DrawForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddJigRepairInformationForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.JigRepairInformationForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm.vi-VN.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ProductionControllerForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddUpdateReportDownTimeFrom.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ReportDownTimeForm.vi.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csproj.GenerateResource.Cache
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\vi\MachineMaintenance.resources.dll
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\vi-VN\MachineMaintenance.resources.dll
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.dll
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.pdb
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csprojResolveAssemblyReference.cache
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.MaintenanceMachineVTForm.resources
+D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMaintenanceMachineVTForm.resources
+D:\VCB\FW\NidecMES\Dll\MachineMaintenance.dll.config
+D:\VCB\FW\NidecMES\Dll\MachineMaintenance.dll
+D:\VCB\FW\NidecMES\Dll\MachineMaintenance.pdb
+D:\VCB\FW\NidecMES\Dll\vi\MachineMaintenance.resources.dll
+D:\VCB\FW\NidecMES\Dll\vi-VN\MachineMaintenance.resources.dll
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Interop.VBIDE.dll
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csproj.ResolveComReference.cache
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AccountCodeForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.Account_WhForm.AccountCodeForm.AddAccountCodeForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddAcountMainForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AccountLocationForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.Account_WhForm.AccountLocationForm.AddAccountLocationForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddAssetForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AssetForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AccountMainForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddDetailPositionForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.DetailPositionForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddWareHouseMainForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WarehouseMainForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDocumentForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DocumentForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDrawForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DrawForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddJigRepairInformationForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.JigRepairInformationForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddRankForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.RankForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ProductionControllerForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddUpdateReportDownTimeFrom.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ReportDownTimeForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddUserLocationForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.UserLocationForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddWareHouseForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WareHouseForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddCommentDatalostVT.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddNewMachineVT.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMovingMachineVTForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMaintenanceMachineVTForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.MaintenanceMachineVTForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WarehouseVTCheckForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.MovingMachineVTForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WarehouseVTForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMachineStatusForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddPlanWorkingStatusForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.WorkingStatusForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Properties.Resources.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDocumentForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DocumentForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddDrawForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.DrawForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddJigRepairInformationForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.JigRepairInformationForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm.vi-VN.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ProductionControllerForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddUpdateReportDownTimeFrom.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.ReportDownTimeForm.vi.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csproj.GenerateResource.Cache
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\vi\MachineMaintenance.resources.dll
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\vi-VN\MachineMaintenance.resources.dll
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.dll
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.pdb
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.FormCommonNCVP.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddDepartmentForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.DepartmentForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddFuntionDepartmentForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.FunctionDepartmentForm.resources
+D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csprojResolveAssemblyReference.cache

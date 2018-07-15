@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.Common.Basic.MachineMaintenance.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APPLICATION_HEADER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Viet Tien Company Warehouse System  </Value>
+    </Setting>
+    <Setting Name="CONNECTION_STRING" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=localhost;Port=5432;UserId=postgres;Password=12345;Database=mesdb;</Value>
+    </Setting>
+    <Setting Name="ApplicationTypeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Com.Nidec.Mes.Common.Basic.MachineMaintenance.MainForm</Value>
+    </Setting>
+    <Setting Name="AUTHENTIFICATE_FLAG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="SERVER_TIME_ZONE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Singapore Standard Time</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
