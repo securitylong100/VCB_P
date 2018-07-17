@@ -11,7 +11,7 @@ using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao;
 namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Cbm
 {
     public class AddAccountCodeCbm : CbmController
-    {
+    {\\
         private static readonly DataAccessObject getDao = new AddAccountCodeDao();
         public ValueObject Execute(TransactionContext trxContext, ValueObject vo)
         {
