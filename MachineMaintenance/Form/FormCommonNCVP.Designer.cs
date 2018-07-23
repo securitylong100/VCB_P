@@ -37,7 +37,6 @@
             this.ClientSize = new System.Drawing.Size(512, 211);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCommonNCVP";
-            this.TitleText = "FormCommon";
             this.ResumeLayout(false);
 
         }

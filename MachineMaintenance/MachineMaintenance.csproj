@@ -31,7 +31,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\FW\NidecMES\Dll\</OutputPath>
+    <OutputPath>..\..\fw\NidecMES\Dll\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -48,23 +48,28 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Framework">
+    <Reference Include="Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\fw\NidecMES\Dll\Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Framework_Server">
+    <Reference Include="Framework_Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\fw\NidecMES\Dll\Framework_Server.dll</HintPath>
     </Reference>
-    <Reference Include="GlobalMasterMaintenance">
+    <Reference Include="GlobalMasterMaintenance, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\fw\NidecMES\Dll\GlobalMasterMaintenance.dll</HintPath>
     </Reference>
     <Reference Include="Interop.VBIDE">
       <HintPath>..\..\fw\NidecMES\Dll\Interop.VBIDE.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="log4net">
+    <Reference Include="log4net, Version=2.0.7.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\fw\NidecMES\Dll\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="npgsql">
+    <Reference Include="npgsql, Version=3.1.9.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\fw\NidecMES\Dll\npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
