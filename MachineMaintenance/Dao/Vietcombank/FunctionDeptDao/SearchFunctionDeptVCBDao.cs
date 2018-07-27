@@ -19,7 +19,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             ValueObjectList<FunctionDeptVo> voList = new ValueObjectList<FunctionDeptVo>();
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, string.Empty);
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
-            sql.Append(@"select a.vcb_functiondept_id, a.vcb_functiondept_cd, a.vcb_functiondept_name,a.registration_user_cd, a.registration_date_time, a.factory_cd, b.vcb_department_cd, b.vcb_department_name 
+            sql.Append(@"select a.vcb_functiondept_id, a.vcb_functiondept_cd, a.vcb_functiondept_name, a. user_name, a.registration_user_cd, a.registration_date_time, a.factory_cd, b.vcb_department_cd, b.vcb_department_name 
                 from  vcb_functiondept a
                     left join vcb_department b on a.vcb_department_id  = b.vcb_department_id  Where 1=1  ");   
            
@@ -58,7 +58,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                     FunctionDeptId = int.Parse(dataReader["vcb_functiondept_id"].ToString()),
                     FunctionDeptCode = dataReader["vcb_functiondept_cd"].ToString(),
                     FunctionDeptName = dataReader["vcb_functiondept_name"].ToString(),
-
+                    UserName = dataReader["user_name"].ToString(),
                     RegistrationUserCode = dataReader["registration_user_cd"].ToString(),
                     RegistrationDateTime = DateTime.Parse(dataReader["registration_date_time"].ToString()),
                     FactoryCode = dataReader["factory_cd"].ToString()

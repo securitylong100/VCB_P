@@ -1,6 +1,6 @@
 ﻿namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
 {
-    partial class FunctionDepartmentForm
+    partial class TranferRequestForm
     {
         /// <summary>
         /// Required designer variable.
@@ -69,7 +69,7 @@
             this.Clear_btn.TabIndex = 18;
             this.Clear_btn.Text = "Clear";
             this.Clear_btn.UseVisualStyleBackColor = true;
-            this.Clear_btn.Click += new System.EventHandler(this.Clear_btn_Click);
+      
             // 
             // Exit_btn
             // 
@@ -84,7 +84,7 @@
             this.Exit_btn.TabIndex = 22;
             this.Exit_btn.Text = "Exit";
             this.Exit_btn.UseVisualStyleBackColor = true;
-            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+   
             // 
             // Delete_btn
             // 
@@ -99,7 +99,7 @@
             this.Delete_btn.TabIndex = 21;
             this.Delete_btn.Text = "Delete";
             this.Delete_btn.UseVisualStyleBackColor = true;
-            this.Delete_btn.Click += new System.EventHandler(this.Delete_btn_Click);
+       
             // 
             // Update_btn
             // 
@@ -114,7 +114,7 @@
             this.Update_btn.TabIndex = 20;
             this.Update_btn.Text = "Update";
             this.Update_btn.UseVisualStyleBackColor = true;
-            this.Update_btn.Click += new System.EventHandler(this.Update_btn_Click);
+            
             // 
             // Add_btn
             // 
@@ -128,7 +128,7 @@
             this.Add_btn.TabIndex = 17;
             this.Add_btn.Text = "Add";
             this.Add_btn.UseVisualStyleBackColor = true;
-            this.Add_btn.Click += new System.EventHandler(this.Add_btn_Click);
+       
             // 
             // Search_btn
             // 
@@ -142,7 +142,7 @@
             this.Search_btn.TabIndex = 16;
             this.Search_btn.Text = "Search";
             this.Search_btn.UseVisualStyleBackColor = true;
-            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
+        
             // 
             // FunctionName_txt
             // 
@@ -355,7 +355,7 @@
             this.Controls.Add(this.FunctionCode_txt);
             this.Controls.Add(this.DeptCode_lbl);
             this.Name = "FunctionDepartmentForm";
-            this.Load += new System.EventHandler(this.FunctionDepartmentForm_Load);
+     
             this.Controls.SetChildIndex(this.DeptCode_lbl, 0);
             this.Controls.SetChildIndex(this.FunctionCode_txt, 0);
             this.Controls.SetChildIndex(this.FunctionName_txt, 0);

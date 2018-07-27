@@ -16,9 +16,9 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
         {
             FunctionDeptVo inVo = (FunctionDeptVo)vo;
             StringBuilder sql = new StringBuilder();
-            sql.Append("insert into vcb_functiondept(vcb_department_id, vcb_functiondept_cd, vcb_functiondept_name, registration_user_cd, registration_date_time, factory_cd) ");
-            sql.Append("values(:vcb_department_id, :vcb_functiondept_cd, :vcb_functiondept_name, :registration_user_cd, now(), :factory_cd)");
-            
+            sql.Append("insert into vcb_functiondept(vcb_department_id, vcb_functiondept_cd, vcb_functiondept_name, user_name, registration_user_cd, registration_date_time, factory_cd) ");
+            sql.Append("values(:vcb_department_id, :vcb_functiondept_cd, :vcb_functiondept_name, :user_name, :registration_user_cd, now(), :factory_cd)");
+
             //create command
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
 
@@ -27,7 +27,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             sqlParameter.AddParameterInteger("vcb_department_id", inVo.DepartmentId);
             sqlParameter.AddParameterString("vcb_functiondept_cd", inVo.FunctionDeptCode);
             sqlParameter.AddParameterString("vcb_functiondept_name", inVo.FunctionDeptName);
-        
+            sqlParameter.AddParameterString("user_name", inVo.UserName);
             sqlParameter.AddParameterString("factory_cd", inVo.FactoryCode);
             sqlParameter.AddParameterString("registration_user_cd", inVo.RegistrationUserCode);
             //execute SQL

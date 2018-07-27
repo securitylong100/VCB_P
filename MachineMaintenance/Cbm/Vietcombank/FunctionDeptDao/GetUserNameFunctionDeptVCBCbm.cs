@@ -10,9 +10,9 @@ using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao;
 
 namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Cbm
 {
-    public class AddAccountCodeCbm : CbmController
+    public class GetUserNameFunctionDeptVCBCbm : CbmController
     {
-        private static readonly DataAccessObject getDao = new AddAccountCodeDao();
+        private static readonly DataAccessObject getDao = new GetUserNameFunctionDeptVCBDao();
         public ValueObject Execute(TransactionContext trxContext, ValueObject vo)
         {
             if (vo == null)

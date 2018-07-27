@@ -40,6 +40,9 @@
             this.FunctionCode_txt = new Com.Nidec.Mes.Framework.TextBoxCommon();
             this.DeptCode_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
             this.labelCommon3 = new Com.Nidec.Mes.Framework.LabelCommon();
+            this.UserName_cmb = new Com.Nidec.Mes.Framework.ComboBoxCommon();
+            this.user_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
+            this.labelCommon5 = new Com.Nidec.Mes.Framework.LabelCommon();
             this.SuspendLayout();
             // 
             // UpdateText_lbl
@@ -62,7 +65,7 @@
             this.labelCommon1.Font = new System.Drawing.Font("Arial", 9F);
             this.labelCommon1.ForeColor = System.Drawing.Color.DarkRed;
             this.labelCommon1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelCommon1.Location = new System.Drawing.Point(349, 269);
+            this.labelCommon1.Location = new System.Drawing.Point(326, 244);
             this.labelCommon1.Name = "labelCommon1";
             this.labelCommon1.Size = new System.Drawing.Size(27, 15);
             this.labelCommon1.TabIndex = 30;
@@ -76,7 +79,7 @@
             this.labelCommon2.Font = new System.Drawing.Font("Arial", 9F);
             this.labelCommon2.ForeColor = System.Drawing.Color.DarkRed;
             this.labelCommon2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelCommon2.Location = new System.Drawing.Point(349, 218);
+            this.labelCommon2.Location = new System.Drawing.Point(326, 199);
             this.labelCommon2.Name = "labelCommon2";
             this.labelCommon2.Size = new System.Drawing.Size(27, 15);
             this.labelCommon2.TabIndex = 31;
@@ -89,7 +92,7 @@
             this.Exit_btn.ControlId = null;
             this.Exit_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Exit_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Exit_btn.Location = new System.Drawing.Point(263, 332);
+            this.Exit_btn.Location = new System.Drawing.Point(240, 336);
             this.Exit_btn.Name = "Exit_btn";
             this.Exit_btn.Size = new System.Drawing.Size(80, 33);
             this.Exit_btn.TabIndex = 29;
@@ -103,7 +106,7 @@
             this.Ok_btn.ControlId = null;
             this.Ok_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Ok_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Ok_btn.Location = new System.Drawing.Point(156, 332);
+            this.Ok_btn.Location = new System.Drawing.Point(133, 336);
             this.Ok_btn.Name = "Ok_btn";
             this.Ok_btn.Size = new System.Drawing.Size(80, 33);
             this.Ok_btn.TabIndex = 28;
@@ -117,7 +120,7 @@
             this.functionname_lbl.ControlId = null;
             this.functionname_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.functionname_lbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.functionname_lbl.Location = new System.Drawing.Point(56, 263);
+            this.functionname_lbl.Location = new System.Drawing.Point(33, 238);
             this.functionname_lbl.Name = "functionname_lbl";
             this.functionname_lbl.Size = new System.Drawing.Size(91, 15);
             this.functionname_lbl.TabIndex = 38;
@@ -129,7 +132,7 @@
             this.functioncode_lbl.ControlId = null;
             this.functioncode_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.functioncode_lbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.functioncode_lbl.Location = new System.Drawing.Point(59, 219);
+            this.functioncode_lbl.Location = new System.Drawing.Point(36, 200);
             this.functioncode_lbl.Name = "functioncode_lbl";
             this.functioncode_lbl.Size = new System.Drawing.Size(87, 15);
             this.functioncode_lbl.TabIndex = 37;
@@ -140,7 +143,7 @@
             this.DeptCode_cmb.ControlId = null;
             this.DeptCode_cmb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeptCode_cmb.FormattingEnabled = true;
-            this.DeptCode_cmb.Location = new System.Drawing.Point(156, 163);
+            this.DeptCode_cmb.Location = new System.Drawing.Point(133, 153);
             this.DeptCode_cmb.Name = "DeptCode_cmb";
             this.DeptCode_cmb.Size = new System.Drawing.Size(187, 23);
             this.DeptCode_cmb.TabIndex = 36;
@@ -150,7 +153,7 @@
             this.FunctionName_txt.ControlId = null;
             this.FunctionName_txt.Font = new System.Drawing.Font("Arial", 9F);
             this.FunctionName_txt.InputType = Com.Nidec.Mes.Framework.TextBoxCommon.InputTypeList.All;
-            this.FunctionName_txt.Location = new System.Drawing.Point(156, 263);
+            this.FunctionName_txt.Location = new System.Drawing.Point(133, 238);
             this.FunctionName_txt.MaxLength = 32;
             this.FunctionName_txt.Name = "FunctionName_txt";
             this.FunctionName_txt.Size = new System.Drawing.Size(187, 21);
@@ -161,7 +164,7 @@
             this.FunctionCode_txt.ControlId = null;
             this.FunctionCode_txt.Font = new System.Drawing.Font("Arial", 9F);
             this.FunctionCode_txt.InputType = Com.Nidec.Mes.Framework.TextBoxCommon.InputTypeList.All;
-            this.FunctionCode_txt.Location = new System.Drawing.Point(156, 215);
+            this.FunctionCode_txt.Location = new System.Drawing.Point(133, 196);
             this.FunctionCode_txt.MaxLength = 32;
             this.FunctionCode_txt.Name = "FunctionCode_txt";
             this.FunctionCode_txt.Size = new System.Drawing.Size(187, 21);
@@ -173,7 +176,7 @@
             this.DeptCode_lbl.ControlId = null;
             this.DeptCode_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.DeptCode_lbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DeptCode_lbl.Location = new System.Drawing.Point(80, 166);
+            this.DeptCode_lbl.Location = new System.Drawing.Point(57, 156);
             this.DeptCode_lbl.Name = "DeptCode_lbl";
             this.DeptCode_lbl.Size = new System.Drawing.Size(66, 15);
             this.DeptCode_lbl.TabIndex = 33;
@@ -186,17 +189,56 @@
             this.labelCommon3.Font = new System.Drawing.Font("Arial", 9F);
             this.labelCommon3.ForeColor = System.Drawing.Color.DarkRed;
             this.labelCommon3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelCommon3.Location = new System.Drawing.Point(349, 166);
+            this.labelCommon3.Location = new System.Drawing.Point(326, 156);
             this.labelCommon3.Name = "labelCommon3";
             this.labelCommon3.Size = new System.Drawing.Size(27, 15);
             this.labelCommon3.TabIndex = 31;
             this.labelCommon3.Text = "(＊)";
             this.labelCommon3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // UserName_cmb
+            // 
+            this.UserName_cmb.ControlId = null;
+            this.UserName_cmb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserName_cmb.FormattingEnabled = true;
+            this.UserName_cmb.Location = new System.Drawing.Point(133, 278);
+            this.UserName_cmb.Name = "UserName_cmb";
+            this.UserName_cmb.Size = new System.Drawing.Size(187, 23);
+            this.UserName_cmb.TabIndex = 41;
+            // 
+            // user_lbl
+            // 
+            this.user_lbl.AutoSize = true;
+            this.user_lbl.ControlId = null;
+            this.user_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.user_lbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.user_lbl.Location = new System.Drawing.Point(57, 281);
+            this.user_lbl.Name = "user_lbl";
+            this.user_lbl.Size = new System.Drawing.Size(74, 15);
+            this.user_lbl.TabIndex = 40;
+            this.user_lbl.Text = "User Name:";
+            // 
+            // labelCommon5
+            // 
+            this.labelCommon5.AutoSize = true;
+            this.labelCommon5.ControlId = null;
+            this.labelCommon5.Font = new System.Drawing.Font("Arial", 9F);
+            this.labelCommon5.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelCommon5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelCommon5.Location = new System.Drawing.Point(326, 281);
+            this.labelCommon5.Name = "labelCommon5";
+            this.labelCommon5.Size = new System.Drawing.Size(27, 15);
+            this.labelCommon5.TabIndex = 39;
+            this.labelCommon5.Text = "(＊)";
+            this.labelCommon5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AddFuntionDepartmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(437, 398);
+            this.ClientSize = new System.Drawing.Size(437, 413);
+            this.Controls.Add(this.UserName_cmb);
+            this.Controls.Add(this.user_lbl);
+            this.Controls.Add(this.labelCommon5);
             this.Controls.Add(this.functionname_lbl);
             this.Controls.Add(this.functioncode_lbl);
             this.Controls.Add(this.DeptCode_cmb);
@@ -223,6 +265,9 @@
             this.Controls.SetChildIndex(this.DeptCode_cmb, 0);
             this.Controls.SetChildIndex(this.functioncode_lbl, 0);
             this.Controls.SetChildIndex(this.functionname_lbl, 0);
+            this.Controls.SetChildIndex(this.labelCommon5, 0);
+            this.Controls.SetChildIndex(this.user_lbl, 0);
+            this.Controls.SetChildIndex(this.UserName_cmb, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +287,8 @@
         private Framework.TextBoxCommon FunctionCode_txt;
         private Framework.LabelCommon DeptCode_lbl;
         private Framework.LabelCommon labelCommon3;
+        private Framework.ComboBoxCommon UserName_cmb;
+        private Framework.LabelCommon user_lbl;
+        private Framework.LabelCommon labelCommon5;
     }
 }

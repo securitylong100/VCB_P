@@ -11,6 +11,7 @@ using Com.Nidec.Mes.GlobalMasterMaintenance.Vo;
 using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo;
 using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Cbm;
 using Com.Nidec.Mes.GlobalMasterMaintenance;
+using System.Text;
 
 namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
 {
@@ -28,12 +29,20 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             DeptCode_cmb.DataSource = machineserial.GetList();
             DeptCode_cmb.Text = "";
 
+            ValueObjectList<FunctionDeptVo> username = (ValueObjectList<FunctionDeptVo>)DefaultCbmInvoker.Invoke(new GetUserNameFunctionDeptVCBCbm(), new FunctionDeptVo());
+            UserName_cmb.DisplayMember = "UserName";
+            UserName_cmb.DataSource = username.GetList();
+            UserName_cmb.Text = "";
+
+
+
             DeptCode_cmb.Select();
             if (functiondeptvo.FunctionDeptId > 0)
             {
                 DeptCode_cmb.Text = functiondeptvo.DepartmentCode;
                 FunctionCode_txt.Text = functiondeptvo.FunctionDeptCode;
                 FunctionName_txt.Text = functiondeptvo.FunctionDeptName;
+                UserName_cmb.Text = functiondeptvo.UserName;
             }
 
 
@@ -56,6 +65,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                     DepartmentId = ((DepartmentVo)this.DeptCode_cmb.SelectedItem).DepartmentId,
                     FunctionDeptCode = FunctionCode_txt.Text,
                     FunctionDeptName = FunctionName_txt.Text,
+                    UserName = UserName_cmb.Text,
                     FactoryCode = UserData.GetUserData().FactoryCode,
                     RegistrationUserCode = UserData.GetUserData().UserCode
                 };
@@ -106,7 +116,14 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             {
                 messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, functionname_lbl.Text);
                 popUpMessage.Warning(messageData, Text);
-                functionname_lbl.Focus();
+                FunctionName_txt.Focus();
+                return false;
+            }
+            if (UserName_cmb.Text == "")
+            {
+                messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, user_lbl.Text);
+                popUpMessage.Warning(messageData, Text);
+                UserName_cmb.Focus();
                 return false;
             }
 

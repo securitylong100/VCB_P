@@ -24,6 +24,11 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             DeptCode_cmb.DisplayMember = "DepartmentCode";
             DeptCode_cmb.DataSource = machineserial.GetList();
             DeptCode_cmb.Text = "";
+
+            ValueObjectList<FunctionDeptVo> username = (ValueObjectList<FunctionDeptVo>)DefaultCbmInvoker.Invoke(new GetUserNameFunctionDeptVCBCbm(), new FunctionDeptVo());
+            UserName_cmb.DisplayMember = "UserName";
+            UserName_cmb.DataSource = username.GetList();
+            UserName_cmb.Text = "";
         }
 
         private void Search_btn_Click(object sender, EventArgs e)
@@ -40,6 +45,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                     DepartmentCode = DeptCode_cmb.Text,
                     FunctionDeptCode = FunctionCode_txt.Text,
                     FunctionDeptName = FunctionName_txt.Text,
+                   UserName = UserName_cmb.Text,
                    
                     //AssetNo = 
                 };
@@ -61,6 +67,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             DeptCode_cmb.Text = "";
             FunctionCode_txt.Text = "";
             FunctionName_txt.Text  = "";
+            UserName_cmb.Text = "";
         }
 
         private void Exit_btn_Click(object sender, EventArgs e)

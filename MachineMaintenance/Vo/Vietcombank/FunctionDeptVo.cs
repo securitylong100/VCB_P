@@ -21,6 +21,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         /// </summary>
         public string FunctionDeptCode { get; set; }
 
+        public string UserName { get; set; }
+
         /// <summary>
         /// get and set RankName
         /// </summary>

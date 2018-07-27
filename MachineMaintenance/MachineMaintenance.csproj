@@ -179,6 +179,7 @@
     <Compile Include="Cbm\Vietcombank\FunctionDeptDao\AddFunctionDeptVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\FunctionDeptDao\CheckFunctionDeptVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\FunctionDeptDao\DeleteFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\GetUserNameFunctionDeptVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\FunctionDeptDao\SearchFunctionDeptVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\FunctionDeptDao\UpdateFunctionDeptVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\AddDepartmentVCBCbm.cs" />
@@ -312,6 +313,7 @@
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\AddFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\CheckFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\DeleteFunctionDeptVCBDao.cs" />
+    <Compile Include="Dao\Vietcombank\FunctionDeptDao\GetUserNameFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\SearchFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\UpdateFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\DepartmentDao\AddDepartmentVCBDao.cs" />
@@ -545,6 +547,12 @@
     </Compile>
     <Compile Include="Form\Vietcombank\DepartmentForm\DepartmentForm.Designer.cs">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Vietcombank\TranferRequestForm\TranferRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Vietcombank\TranferRequestForm\TranferRequestForm.Designer.cs">
+      <DependentUpon>TranferRequestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\WarehouseVTForm\AddCommentDatalostVT.cs">
       <SubType>Form</SubType>
@@ -781,6 +789,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Vietcombank\DepartmentForm\DepartmentForm.resx">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Vietcombank\TranferRequestForm\TranferRequestForm.resx">
+      <DependentUpon>TranferRequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\WarehouseVTForm\AddCommentDatalostVT.resx">
       <DependentUpon>AddCommentDatalostVT.cs</DependentUpon>
