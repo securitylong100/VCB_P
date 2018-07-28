@@ -199,3 +199,5 @@ D:\VCB\VCB_P\MachineMaintenance\obj\Debug\vi\MachineMaintenance.resources.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\vi-VN\MachineMaintenance.resources.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\MachineMaintenance.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\MachineMaintenance.pdb
+D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddTranferRequestForm.resources
+D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.TranferRequestForm.resources

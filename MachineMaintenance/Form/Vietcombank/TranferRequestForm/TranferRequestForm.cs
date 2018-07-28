@@ -16,6 +16,12 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             InitializeComponent();
 
         }
+
+        private void Add_btn_Click(object sender, EventArgs e)
+        {
+            AddTranferRequestForm addtrffer = new AddTranferRequestForm();
+            addtrffer.ShowDialog();
+        }
     }
 
 

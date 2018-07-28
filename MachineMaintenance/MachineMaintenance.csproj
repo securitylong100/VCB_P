@@ -548,6 +548,12 @@
     <Compile Include="Form\Vietcombank\DepartmentForm\DepartmentForm.Designer.cs">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Vietcombank\TranferRequestForm\AddTranferRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Vietcombank\TranferRequestForm\AddTranferRequestForm.Designer.cs">
+      <DependentUpon>AddTranferRequestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Vietcombank\TranferRequestForm\TranferRequestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -789,6 +795,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Vietcombank\DepartmentForm\DepartmentForm.resx">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Vietcombank\TranferRequestForm\AddTranferRequestForm.resx">
+      <DependentUpon>AddTranferRequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Vietcombank\TranferRequestForm\TranferRequestForm.resx">
       <DependentUpon>TranferRequestForm.cs</DependentUpon>

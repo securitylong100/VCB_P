@@ -19,7 +19,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             ValueObjectList<FunctionDeptVo> voList = new ValueObjectList<FunctionDeptVo>();
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, string.Empty);
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
-            sql.Append(@"select a.vcb_functiondept_id, a.vcb_functiondept_cd, a.vcb_functiondept_name, a. user_name, a.registration_user_cd, a.registration_date_time, a.factory_cd, b.vcb_department_cd, b.vcb_department_name 
+            sql.Append(@"select a.vcb_functiondept_id, a.vcb_functiondept_cd, a.vcb_functiondept_name, a.user_name, a.registration_user_cd, a.registration_date_time, a.factory_cd, b.vcb_department_cd, b.vcb_department_name 
                 from  vcb_functiondept a
                     left join vcb_department b on a.vcb_department_id  = b.vcb_department_id  Where 1=1  ");   
            
@@ -39,7 +39,11 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 sql.Append(" and b.vcb_department_cd = :vcb_department_cd ");
                 sqlParameter.AddParameterString("vcb_department_cd", inVo.DepartmentCode);
             }
-
+            if (!string.IsNullOrEmpty(inVo.UserName))
+            {
+                sql.Append(" and a.user_name = :user_name ");
+                sqlParameter.AddParameterString("user_name", inVo.UserName);
+            }
 
             //create command
             //DbCommandAdaptor 
