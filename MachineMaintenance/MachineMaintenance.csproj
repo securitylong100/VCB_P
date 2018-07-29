@@ -187,6 +187,7 @@
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\DeleteDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\GetDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\UpdateDepartmentVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\GetMaxCodeTranferRequestCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\CheckIdAddFormVTCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\GetMachineStatusCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\GetMachineModelVTCbm.cs" />
@@ -321,6 +322,7 @@
     <Compile Include="Dao\Vietcombank\DepartmentDao\DeleteDepartmentVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\DepartmentDao\GetDepartmentVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\DepartmentDao\UpdateDepartmentVCBDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\GetMaxCodeTranferRequestDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\AddListDatalostVTDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\AddNewListCheckVTDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\DeleteDatalostVTDao.cs" />
@@ -644,6 +646,7 @@
     <Compile Include="Vo\Account-WhVo\AccountMainVo.cs" />
     <Compile Include="Vo\AddMachineStatusVo.cs" />
     <Compile Include="Vo\MaintenanceMachineVTVo.cs" />
+    <Compile Include="Vo\Vietcombank\TranferRequestVo.cs" />
     <Compile Include="Vo\Vietcombank\FunctionDeptVo.cs" />
     <Compile Include="Vo\Vietcombank\DepartmentVo.cs" />
     <Compile Include="Vo\WarehouseVTListVo.cs" />
