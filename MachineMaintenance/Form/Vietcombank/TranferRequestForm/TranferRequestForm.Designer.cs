@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Exit_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Delete_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Update_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
@@ -55,7 +55,7 @@
             this.Exit_btn.ControlId = null;
             this.Exit_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Exit_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Exit_btn.Location = new System.Drawing.Point(506, 201);
+            this.Exit_btn.Location = new System.Drawing.Point(516, 193);
             this.Exit_btn.Name = "Exit_btn";
             this.Exit_btn.Size = new System.Drawing.Size(80, 33);
             this.Exit_btn.TabIndex = 22;
@@ -69,7 +69,7 @@
             this.Delete_btn.ControlId = null;
             this.Delete_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Delete_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Delete_btn.Location = new System.Drawing.Point(412, 201);
+            this.Delete_btn.Location = new System.Drawing.Point(371, 193);
             this.Delete_btn.Name = "Delete_btn";
             this.Delete_btn.Size = new System.Drawing.Size(80, 33);
             this.Delete_btn.TabIndex = 21;
@@ -83,7 +83,7 @@
             this.Update_btn.ControlId = null;
             this.Update_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Update_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Update_btn.Location = new System.Drawing.Point(318, 201);
+            this.Update_btn.Location = new System.Drawing.Point(243, 193);
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.Size = new System.Drawing.Size(80, 33);
             this.Update_btn.TabIndex = 20;
@@ -96,7 +96,7 @@
             this.Add_btn.ControlId = null;
             this.Add_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Add_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Add_btn.Location = new System.Drawing.Point(115, 201);
+            this.Add_btn.Location = new System.Drawing.Point(124, 193);
             this.Add_btn.Name = "Add_btn";
             this.Add_btn.Size = new System.Drawing.Size(80, 33);
             this.Add_btn.TabIndex = 17;
@@ -110,7 +110,7 @@
             this.Search_btn.ControlId = null;
             this.Search_btn.Font = new System.Drawing.Font("Arial", 9F);
             this.Search_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Search_btn.Location = new System.Drawing.Point(21, 201);
+            this.Search_btn.Location = new System.Drawing.Point(30, 193);
             this.Search_btn.Name = "Search_btn";
             this.Search_btn.Size = new System.Drawing.Size(80, 33);
             this.Search_btn.TabIndex = 16;
@@ -121,14 +121,14 @@
             // 
             this.FunctionDeptDetails_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.FunctionDeptDetails_dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FunctionDeptDetails_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FunctionDeptDetails_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.FunctionDeptDetails_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colFunctionDeptId,
             this.colDepartmentCode,
@@ -139,26 +139,26 @@
             this.colRegistrationDateTime,
             this.colFactoryCode});
             this.FunctionDeptDetails_dgv.ControlId = null;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FunctionDeptDetails_dgv.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FunctionDeptDetails_dgv.DefaultCellStyle = dataGridViewCellStyle2;
             this.FunctionDeptDetails_dgv.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FunctionDeptDetails_dgv.Location = new System.Drawing.Point(0, 269);
+            this.FunctionDeptDetails_dgv.Location = new System.Drawing.Point(0, 232);
             this.FunctionDeptDetails_dgv.Name = "FunctionDeptDetails_dgv";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FunctionDeptDetails_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.FunctionDeptDetails_dgv.Size = new System.Drawing.Size(1165, 319);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FunctionDeptDetails_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.FunctionDeptDetails_dgv.Size = new System.Drawing.Size(1165, 356);
             this.FunctionDeptDetails_dgv.TabIndex = 76;
             // 
             // colFunctionDeptId
@@ -229,6 +229,7 @@
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.Search_btn);
             this.Name = "TranferRequestForm";
+            this.TitleText = "FormCommon";
             this.Controls.SetChildIndex(this.Search_btn, 0);
             this.Controls.SetChildIndex(this.Add_btn, 0);
             this.Controls.SetChildIndex(this.Update_btn, 0);

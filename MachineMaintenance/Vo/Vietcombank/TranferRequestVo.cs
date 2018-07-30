@@ -12,13 +12,12 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
 
         public int RequestId { get; set; }
         public int RequestCode { get; set; }
-        public int FunctionDeptId { get; set; }
+        public string FunctionDeptRequestCd { get; set; }
         public DateTime RequestDateTime { get; set; }
         public string RequestHeader { get; set; }
         public string RequestContents { get; set; }
-        public string ProcessStatusCheck { get; set; }
+        public bool ProcessStatusCheck { get; set; }
         public string ProcessComments { get; set; }
-
         public DateTime ProcessDateTime { get; set; }
 
         public string RegistrationUserCode { get; set; }
@@ -29,6 +28,9 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         public string DepartmentCode { get; set; }
 
         public string DepartmentName { get; set; }
+
+        public int FunctionDeptId { get; set; }
+        public string   TypeList { get; set; }
         /// <summary>
         /// get and set RegistrationDateTime
         /// </summary>

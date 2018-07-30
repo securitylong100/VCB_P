@@ -187,6 +187,8 @@
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\DeleteDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\GetDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\UpdateDepartmentVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\AddTranferListDao.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\AddTranferRequestCbm.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\GetMaxCodeTranferRequestCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\CheckIdAddFormVTCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\GetMachineStatusCbm.cs" />
@@ -311,6 +313,8 @@
     <Compile Include="Dao\Account-WhDao\WareHouseDao\SearchListWareHouseDao.cs" />
     <Compile Include="Dao\Account-WhDao\WareHouseDao\SearchWareHouseDao.cs" />
     <Compile Include="Dao\Account-WhDao\WareHouseDao\UpdateWareHouseUserDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\AddTranferRequestDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\AddTranferListDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\AddFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\CheckFunctionDeptVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\DeleteFunctionDeptVCBDao.cs" />

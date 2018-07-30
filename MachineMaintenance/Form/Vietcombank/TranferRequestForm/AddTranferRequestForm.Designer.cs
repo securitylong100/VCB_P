@@ -44,6 +44,7 @@
             this.labelCommon4 = new Com.Nidec.Mes.Framework.LabelCommon();
             this.labelCommon7 = new Com.Nidec.Mes.Framework.LabelCommon();
             this.ListUser_dgv = new Com.Nidec.Mes.Framework.DataGridViewCommon();
+            this.colIdfunctiondept = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDeptCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDeptFunction = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -214,6 +215,7 @@
             // 
             // ListUser_dgv
             // 
+            this.ListUser_dgv.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,6 +226,7 @@
             this.ListUser_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.ListUser_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ListUser_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colIdfunctiondept,
             this.colDeptCode,
             this.colDeptFunction,
             this.colUserName,
@@ -249,6 +252,12 @@
             this.ListUser_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.ListUser_dgv.Size = new System.Drawing.Size(479, 257);
             this.ListUser_dgv.TabIndex = 79;
+            // 
+            // colIdfunctiondept
+            // 
+            this.colIdfunctiondept.HeaderText = "Id Function Dept";
+            this.colIdfunctiondept.Name = "colIdfunctiondept";
+            this.colIdfunctiondept.Visible = false;
             // 
             // colDeptCode
             // 
@@ -413,6 +422,7 @@
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Ok_btn);
             this.Name = "AddTranferRequestForm";
+            this.TitleText = "FormCommon";
             this.Load += new System.EventHandler(this.AddTranferRequestForm_Load);
             this.Controls.SetChildIndex(this.Ok_btn, 0);
             this.Controls.SetChildIndex(this.Exit_btn, 0);
@@ -454,10 +464,11 @@
         private Framework.ButtonCommon remove_btn;
         private Framework.RadioButtonCommon CC_radio;
         private Framework.RadioButtonCommon To_radio;
+        private Framework.LabelCommon labelCommon3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIdfunctiondept;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDeptCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDeptFunction;
         private System.Windows.Forms.DataGridViewTextBoxColumn colUserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colType;
-        private Framework.LabelCommon labelCommon3;
     }
 }

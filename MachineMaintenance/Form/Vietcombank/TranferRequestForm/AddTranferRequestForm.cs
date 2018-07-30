@@ -31,11 +31,11 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             DeptCode_cmb.DisplayMember = "DepartmentCode";
             DeptCode_cmb.DataSource = machineserial.GetList();
             DeptCode_cmb.Text = "";
-           
+
 
         }
 
-      
+
         private void DeptCode_cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             ValueObjectList<FunctionDeptVo> machineserial = (ValueObjectList<FunctionDeptVo>)DefaultCbmInvoker.Invoke(new SearchFunctionDeptVCBCbm(), new FunctionDeptVo() { DepartmentCode = DeptCode_cmb.Text, });
@@ -53,33 +53,120 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
 
         private void add_btn_Click(object sender, EventArgs e)
         {
-            if (To_radio.Checked == true)
+            if (DeptCode_cmb.Text != "" && FunctionCode_cmb.Text != "" && UserName_cmb.Text != "")
             {
-                ListUser_dgv.Rows.Add(DeptCode_cmb.Text, FunctionCode_cmb.Text, UserName_cmb.Text, To_radio.Text);
+                FunctionDeptVo idvo = new FunctionDeptVo() { FunctionDeptId = ((FunctionDeptVo)this.UserName_cmb.SelectedItem).FunctionDeptId };
+                int id = idvo.FunctionDeptId;
+                if (To_radio.Checked == true)
+                {
+                    ListUser_dgv.Rows.Add(id, DeptCode_cmb.Text, FunctionCode_cmb.Text, UserName_cmb.Text, To_radio.Text);
+                }
+                else if (CC_radio.Checked == true)
+                {
+                    ListUser_dgv.Rows.Add(id, DeptCode_cmb.Text, FunctionCode_cmb.Text, UserName_cmb.Text, CC_radio.Text);
+                }
             }
-            else if (CC_radio.Checked == true)
+            else
             {
-                ListUser_dgv.Rows.Add(DeptCode_cmb.Text, FunctionCode_cmb.Text, UserName_cmb.Text, CC_radio.Text);
+                messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, "Other avariable is null, pls, fill data");
+                popUpMessage.Warning(messageData, Text);
             }
-
         }
 
         private void remove_btn_Click(object sender, EventArgs e)
         {
-            ListUser_dgv.Rows.RemoveAt(this.ListUser_dgv.CurrentRow.Index);
+            if (ListUser_dgv.RowCount > 0)
+            {
+                ListUser_dgv.Rows.RemoveAt(this.ListUser_dgv.CurrentRow.Index);
+            }
         }
 
-       
         void requestcode()
         {
             tranfertrquestVo = (TranferRequestVo)DefaultCbmInvoker.Invoke(new Cbm.GetMaxCodeTranferRequestCbm(), new TranferRequestVo());
             string datetime = DateTime.Now.ToString("yyMMdd");
             string requestcodefull = DeptCode_cmb.Text + "_" + datetime + "_" + (tranfertrquestVo.RequestCode).ToString();
-            MessageBox.Show(requestcodefull);
+
         }
+        public int checkTo = 0;
         private void Ok_btn_Click(object sender, EventArgs e)
         {
-            requestcode();
+            for (int i = 0; i < ListUser_dgv.RowCount; i++)
+            {
+                if (ListUser_dgv.Rows[i].Cells["colType"].Value.ToString() == "To")
+                {
+                    checkTo = checkTo + 1;
+                }
+            }
+            tranfertrquestVo = (TranferRequestVo)DefaultCbmInvoker.Invoke(new Cbm.GetMaxCodeTranferRequestCbm(), new TranferRequestVo());
+            if (checkdata())
+            {
+                for (int i = 0; i < ListUser_dgv.RowCount; i++)
+                {
+                    TranferRequestVo outvoList = new TranferRequestVo();
+                    TranferRequestVo invoList = new TranferRequestVo()
+                    {
+                        RequestCode = tranfertrquestVo.RequestCode,
+                        FunctionDeptId = int.Parse(ListUser_dgv.Rows[i].Cells["colIdfunctiondept"].Value.ToString()),
+                        TypeList = ListUser_dgv.Rows[i].Cells["colType"].Value.ToString(),
+                    };
+                    outvoList = (TranferRequestVo)DefaultCbmInvoker.Invoke(new Cbm.AddTranferListCbm(), invoList);
+                }
+                TranferRequestVo outvoTranfer = new TranferRequestVo();
+                TranferRequestVo invoTranfer = new TranferRequestVo()
+                {
+                    RequestCode = tranfertrquestVo.RequestCode,
+                    FunctionDeptRequestCd = UserData.GetUserData().UserCode,
+                    RequestHeader = headerinfo_txt.Text,
+                    RequestContents = contentinfo_txt.Text,
+                    ProcessStatusCheck = false,
+                };
+                outvoTranfer = (TranferRequestVo)DefaultCbmInvoker.Invoke(new Cbm.AddTranferRequestCbm(), invoTranfer);
+
+                if (outvoTranfer.AffectedCount > 0)
+                {
+                    messageData = new MessageData("mmce00001", Properties.Resources.mmce00001, " Header Mail: " + headerinfo_txt.Text);
+                    logger.Info(messageData);
+                    popUpMessage.Information(messageData, Text);
+
+                    DeptCode_cmb.Text = "";
+                    FunctionCode_cmb.Text = "";
+                    UserName_cmb.Text = "";
+                    headerinfo_txt.Text = "";
+                    contentinfo_txt.Text = "";
+                }
+            }
+        }
+        bool checkdata()
+        {
+            if (headerinfo_txt.Text == "")
+            {
+                messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, headerinfo_lbl.Text);
+                popUpMessage.Warning(messageData, Text);
+                headerinfo_txt.Focus();
+                return false;
+            }
+            if (contentinfo_txt.Text == "")
+            {
+                messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, contentinfo_lbl.Text);
+                popUpMessage.Warning(messageData, Text);
+                contentinfo_txt.Focus();
+                return false;
+            }
+            if (ListUser_dgv.RowCount == 0)
+            {
+                messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, "Select mail address");
+                popUpMessage.Warning(messageData, Text);
+                return false;
+            }
+            if (checkTo > 1)
+            {
+                messageData = new MessageData("mmcc00005", Properties.Resources.mmcc00005, "Address mail have many To Type: " + checkTo.ToString());
+                popUpMessage.Warning(messageData, Text);
+                checkTo = 0;
+                return false;
+            }
+            return true;
         }
         private void Exit_btn_Click(object sender, EventArgs e)
         {
