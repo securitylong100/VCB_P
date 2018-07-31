@@ -37,14 +37,10 @@
             this.Add_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Search_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.FunctionDeptDetails_dgv = new Com.Nidec.Mes.Framework.DataGridViewCommon();
-            this.colFunctionDeptId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDepartmentCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFunctionDeptCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFunctionDeptName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRegistrationUserCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRegistrationDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFactoryCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRequestId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRequestCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFunctionDeptRequestCd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.FunctionDeptDetails_dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,14 +126,10 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.FunctionDeptDetails_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.FunctionDeptDetails_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colFunctionDeptId,
-            this.colDepartmentCode,
-            this.colFunctionDeptCode,
-            this.colFunctionDeptName,
-            this.colUserName,
-            this.colRegistrationUserCode,
-            this.colRegistrationDateTime,
-            this.colFactoryCode});
+            this.colRequestId,
+            this.colRequestCode,
+            this.colFunctionDeptRequestCd,
+            this.Column1});
             this.FunctionDeptDetails_dgv.ControlId = null;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -161,62 +153,29 @@
             this.FunctionDeptDetails_dgv.Size = new System.Drawing.Size(1165, 356);
             this.FunctionDeptDetails_dgv.TabIndex = 76;
             // 
-            // colFunctionDeptId
+            // colRequestId
             // 
-            this.colFunctionDeptId.DataPropertyName = "FunctionDeptId";
-            this.colFunctionDeptId.HeaderText = "Function Dept Id";
-            this.colFunctionDeptId.Name = "colFunctionDeptId";
-            this.colFunctionDeptId.Visible = false;
-            this.colFunctionDeptId.Width = 121;
+            this.colRequestId.HeaderText = "RequestId";
+            this.colRequestId.Name = "colRequestId";
+            this.colRequestId.Width = 89;
             // 
-            // colDepartmentCode
+            // colRequestCode
             // 
-            this.colDepartmentCode.DataPropertyName = "DepartmentCode";
-            this.colDepartmentCode.HeaderText = "Department Code";
-            this.colDepartmentCode.Name = "colDepartmentCode";
-            this.colDepartmentCode.Width = 130;
+            this.colRequestCode.HeaderText = "RequestCode";
+            this.colRequestCode.Name = "colRequestCode";
+            this.colRequestCode.Width = 109;
             // 
-            // colFunctionDeptCode
+            // colFunctionDeptRequestCd
             // 
-            this.colFunctionDeptCode.DataPropertyName = "FunctionDeptCode";
-            this.colFunctionDeptCode.HeaderText = "Function Dept Code";
-            this.colFunctionDeptCode.Name = "colFunctionDeptCode";
-            this.colFunctionDeptCode.Width = 141;
+            this.colFunctionDeptRequestCd.HeaderText = "FunctionDeptRequestCd";
+            this.colFunctionDeptRequestCd.Name = "colFunctionDeptRequestCd";
+            this.colFunctionDeptRequestCd.Width = 168;
             // 
-            // colFunctionDeptName
+            // Column1
             // 
-            this.colFunctionDeptName.DataPropertyName = "FunctionDeptName";
-            this.colFunctionDeptName.HeaderText = "Function Dept Name";
-            this.colFunctionDeptName.Name = "colFunctionDeptName";
-            this.colFunctionDeptName.Width = 145;
-            // 
-            // colUserName
-            // 
-            this.colUserName.DataPropertyName = "UserName";
-            this.colUserName.HeaderText = "UserName";
-            this.colUserName.Name = "colUserName";
-            this.colUserName.Width = 93;
-            // 
-            // colRegistrationUserCode
-            // 
-            this.colRegistrationUserCode.DataPropertyName = "RegistrationUserCode";
-            this.colRegistrationUserCode.HeaderText = "RegistrationUserCode";
-            this.colRegistrationUserCode.Name = "colRegistrationUserCode";
-            this.colRegistrationUserCode.Width = 156;
-            // 
-            // colRegistrationDateTime
-            // 
-            this.colRegistrationDateTime.DataPropertyName = "RegistrationDateTime";
-            this.colRegistrationDateTime.HeaderText = "RegistrationDateTime";
-            this.colRegistrationDateTime.Name = "colRegistrationDateTime";
-            this.colRegistrationDateTime.Width = 153;
-            // 
-            // colFactoryCode
-            // 
-            this.colFactoryCode.DataPropertyName = "FactoryCode";
-            this.colFactoryCode.HeaderText = "FactoryCode";
-            this.colFactoryCode.Name = "colFactoryCode";
-            this.colFactoryCode.Width = 101;
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 83;
             // 
             // TranferRequestForm
             // 
@@ -248,13 +207,9 @@
         private Framework.ButtonCommon Add_btn;
         private Framework.ButtonCommon Search_btn;
         private Framework.DataGridViewCommon FunctionDeptDetails_dgv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionDeptId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDepartmentCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionDeptCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionDeptName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colUserName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colRegistrationUserCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colRegistrationDateTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFactoryCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRequestId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRequestCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionDeptRequestCd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

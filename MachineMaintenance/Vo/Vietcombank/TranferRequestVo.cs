@@ -12,7 +12,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
 
         public int RequestId { get; set; }
         public int RequestCode { get; set; }
-        public string FunctionDeptRequestCd { get; set; }
+        public int FunctionDeptRequestId { get; set; }
         public DateTime RequestDateTime { get; set; }
         public string RequestHeader { get; set; }
         public string RequestContents { get; set; }

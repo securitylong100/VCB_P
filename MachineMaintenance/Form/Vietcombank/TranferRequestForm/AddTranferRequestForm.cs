@@ -116,7 +116,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                 TranferRequestVo invoTranfer = new TranferRequestVo()
                 {
                     RequestCode = tranfertrquestVo.RequestCode,
-                    FunctionDeptRequestCd = UserData.GetUserData().UserCode,
+                    FunctionDeptRequestId = 0 ,
                     RequestHeader = headerinfo_txt.Text,
                     RequestContents = contentinfo_txt.Text,
                     ProcessStatusCheck = false,
