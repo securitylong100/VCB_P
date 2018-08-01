@@ -14,7 +14,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
         public TranferRequestForm()
         {
             InitializeComponent();
-
+            TranferRequest_dgv.AutoGenerateColumns = false;
         }
 
         private void Add_btn_Click(object sender, EventArgs e)
@@ -43,6 +43,11 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                 popUpMessage.ApplicationError(exception.GetMessageData(), Text);
                 logger.Error(exception.GetMessageData());
             }
+        }
+
+        private void TranferRequestForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

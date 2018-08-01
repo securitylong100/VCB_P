@@ -167,6 +167,7 @@
             // 
             // colRequestId
             // 
+            this.colRequestId.DataPropertyName = "RequestId ";
             this.colRequestId.HeaderText = "RequestId";
             this.colRequestId.Name = "colRequestId";
             this.colRequestId.Width = 89;
@@ -185,36 +186,42 @@
             // 
             // colFunctionName
             // 
+            this.colFunctionName.DataPropertyName = "FunctionDeptName ";
             this.colFunctionName.HeaderText = "Function Name";
             this.colFunctionName.Name = "colFunctionName";
             this.colFunctionName.Width = 116;
             // 
             // colHeader
             // 
+            this.colHeader.DataPropertyName = "RequestHeader ";
             this.colHeader.HeaderText = "Header";
             this.colHeader.Name = "colHeader";
             this.colHeader.Width = 73;
             // 
             // colContent
             // 
+            this.colContent.DataPropertyName = "RequestContents ";
             this.colContent.HeaderText = "Content";
             this.colContent.Name = "colContent";
             this.colContent.Width = 75;
             // 
             // colStatus
             // 
+            this.colStatus.DataPropertyName = "ProcessStatusCheck ";
             this.colStatus.HeaderText = "Status";
             this.colStatus.Name = "colStatus";
             this.colStatus.Width = 67;
             // 
             // colComment
             // 
+            this.colComment.DataPropertyName = "ProcessComments ";
             this.colComment.HeaderText = "Comment";
             this.colComment.Name = "colComment";
             this.colComment.Width = 87;
             // 
             // colDateConfirm
             // 
+            this.colDateConfirm.DataPropertyName = "ProcessDateTime ";
             this.colDateConfirm.HeaderText = "Date Confirm";
             this.colDateConfirm.Name = "colDateConfirm";
             this.colDateConfirm.Width = 105;
@@ -231,6 +238,7 @@
             this.Controls.Add(this.Search_btn);
             this.Name = "TranferRequestForm";
             this.TitleText = "FormCommon";
+            this.Load += new System.EventHandler(this.TranferRequestForm_Load);
             this.Controls.SetChildIndex(this.Search_btn, 0);
             this.Controls.SetChildIndex(this.Add_btn, 0);
             this.Controls.SetChildIndex(this.Update_btn, 0);
