@@ -22,6 +22,28 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             AddTranferRequestForm addtrffer = new AddTranferRequestForm();
             addtrffer.ShowDialog();
         }
+
+        private void Search_btn_Click(object sender, EventArgs e)
+        {
+            GridBind();
+        }
+        private void GridBind()
+        {
+            try
+            {
+                TranferRequestVo invo = new TranferRequestVo()
+                {
+                };
+                ValueObjectList<TranferRequestVo> listvo = (ValueObjectList<TranferRequestVo>)DefaultCbmInvoker.Invoke(new Cbm.SearchTranferRequestVCBCbm(), invo);
+                TranferRequest_dgv.DataSource = listvo.GetList();
+
+            }
+            catch (Framework.ApplicationException exception)
+            {
+                popUpMessage.ApplicationError(exception.GetMessageData(), Text);
+                logger.Error(exception.GetMessageData());
+            }
+        }
     }
 
 

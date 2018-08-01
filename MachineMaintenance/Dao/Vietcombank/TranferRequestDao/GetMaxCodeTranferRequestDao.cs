@@ -19,7 +19,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
         TranferRequestVo voList = new TranferRequestVo();
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, string.Empty);
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
-            sql.Append(@"select Max(vcb_code_request) + 1 as maxcode from  vcb_tranfer_list ");   
+            sql.Append(@"select Case when Max(vcb_code_request) is null then 0 else Max(vcb_code_request) + 1 end maxcode from  vcb_tranfer_list ");   
            
 
 
@@ -34,13 +34,11 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             {
                 TranferRequestVo outVo = new TranferRequestVo
                 {
-                    
-                    RequestCode =int.Parse( dataReader["maxcode"].ToString())
+
+                    RequestCode = int.Parse(dataReader["maxcode"].ToString())
                 };
-              
-                    voList.RequestCode = outVo.RequestCode;
-                
-              
+
+                voList.RequestCode = outVo.RequestCode;
             }
             dataReader.Close();
             return voList;

@@ -19,19 +19,19 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             ValueObjectList<FunctionDeptVo> voList = new ValueObjectList<FunctionDeptVo>();
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, string.Empty);
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
-            sql.Append(@"select a.vcb_functiondept_id, a.vcb_functiondept_cd, a.vcb_functiondept_name, a.user_name, a.registration_user_cd, a.registration_date_time, a.factory_cd, b.vcb_department_cd, b.vcb_department_name 
-                from  vcb_functiondept a
-                    left join vcb_department b on a.vcb_department_id  = b.vcb_department_id  Where 1=1  ");   
+            sql.Append(@"select c.vcb_functiondept_id, c.vcb_functiondept_cd, c.vcb_functiondept_name, c.user_name, c.registration_user_cd, c.registration_date_time, c.factory_cd, b.vcb_department_cd, b.vcb_department_name 
+                    from  vcb_functiondept c 
+                    left join vcb_department b on c.vcb_department_id  = b.vcb_department_id Where 1=1  "); 
            
 
             if (!string.IsNullOrEmpty(inVo.FunctionDeptCode))
             {
-                sql.Append(" and a.vcb_functiondept_cd = :vcb_functiondept_cd ");
+                sql.Append(" and c.vcb_functiondept_cd = :vcb_functiondept_cd ");
                 sqlParameter.AddParameterString("vcb_functiondept_cd", inVo.FunctionDeptCode);
             }
             if (!string.IsNullOrEmpty(inVo.FunctionDeptName))
             {
-                sql.Append(" and a.vcb_functiondept_name = :vcb_functiondept_name ");
+                sql.Append(" and c.vcb_functiondept_name = :vcb_functiondept_name ");
                 sqlParameter.AddParameterString("vcb_functiondept_name", inVo.FunctionDeptName);
             }
             if (!string.IsNullOrEmpty(inVo.DepartmentCode))
@@ -58,7 +58,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 {
                     DepartmentCode = dataReader["vcb_department_cd"].ToString(),
                     DepartmentName = dataReader["vcb_department_name"].ToString(),
-
+                    
                     FunctionDeptId = int.Parse(dataReader["vcb_functiondept_id"].ToString()),
                     FunctionDeptCode = dataReader["vcb_functiondept_cd"].ToString(),
                     FunctionDeptName = dataReader["vcb_functiondept_name"].ToString(),

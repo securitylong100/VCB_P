@@ -176,12 +176,12 @@
     <Compile Include="Cbm\Account-WhCbm\WareHouseCbm\SeachWareHouseCbm.cs" />
     <Compile Include="Cbm\Account-WhCbm\WareHouseCbm\SearchListWareHouseCbm.cs" />
     <Compile Include="Cbm\Account-WhCbm\WareHouseCbm\UpdateWareHouseUserCbm.cs" />
-    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\AddFunctionDeptVCBCbm.cs" />
-    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\CheckFunctionDeptVCBCbm.cs" />
-    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\DeleteFunctionDeptVCBCbm.cs" />
-    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\GetUserNameFunctionDeptVCBCbm.cs" />
-    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\SearchFunctionDeptVCBCbm.cs" />
-    <Compile Include="Cbm\Vietcombank\FunctionDeptDao\UpdateFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptCbm\AddFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptCbm\CheckFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptCbm\DeleteFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptCbm\GetUserNameFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptCbm\SearchFunctionDeptVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\FunctionDeptCbm\UpdateFunctionDeptVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\AddDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\CheckDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\DeleteDepartmentVCBCbm.cs" />
@@ -189,6 +189,7 @@
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\UpdateDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\AddTranferListDao.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\AddTranferRequestCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\SearchTranferRequestVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\GetMaxCodeTranferRequestCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\CheckIdAddFormVTCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\GetMachineStatusCbm.cs" />
@@ -327,6 +328,7 @@
     <Compile Include="Dao\Vietcombank\DepartmentDao\GetDepartmentVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\DepartmentDao\UpdateDepartmentVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\TranferRequestDao\GetMaxCodeTranferRequestDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\SearchTranferRequestVCBDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\AddListDatalostVTDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\AddNewListCheckVTDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\DeleteDatalostVTDao.cs" />

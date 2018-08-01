@@ -113,10 +113,12 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                     outvoList = (TranferRequestVo)DefaultCbmInvoker.Invoke(new Cbm.AddTranferListCbm(), invoList);
                 }
                 TranferRequestVo outvoTranfer = new TranferRequestVo();
+                
                 TranferRequestVo invoTranfer = new TranferRequestVo()
                 {
                     RequestCode = tranfertrquestVo.RequestCode,
-                    FunctionDeptRequestId = 0 ,
+                    UserName = UserData.GetUserData().UserName,
+                    //FunctionDeptRequestId = 0 ,
                     RequestHeader = headerinfo_txt.Text,
                     RequestContents = contentinfo_txt.Text,
                     ProcessStatusCheck = false,

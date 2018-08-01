@@ -36,12 +36,17 @@
             this.Update_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Add_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Search_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
-            this.FunctionDeptDetails_dgv = new Com.Nidec.Mes.Framework.DataGridViewCommon();
+            this.TranferRequest_dgv = new Com.Nidec.Mes.Framework.DataGridViewCommon();
             this.colRequestId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRequestCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFunctionDeptRequestCd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.FunctionDeptDetails_dgv)).BeginInit();
+            this.colFunctionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDateConfirm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.TranferRequest_dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // Exit_btn
@@ -112,11 +117,13 @@
             this.Search_btn.TabIndex = 16;
             this.Search_btn.Text = "Search";
             this.Search_btn.UseVisualStyleBackColor = true;
+            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
-            // FunctionDeptDetails_dgv
+            // TranferRequest_dgv
             // 
-            this.FunctionDeptDetails_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.FunctionDeptDetails_dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.TranferRequest_dgv.AllowUserToAddRows = false;
+            this.TranferRequest_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.TranferRequest_dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,13 +131,18 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FunctionDeptDetails_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.FunctionDeptDetails_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TranferRequest_dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.TranferRequest_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colRequestId,
             this.colRequestCode,
             this.colFunctionDeptRequestCd,
-            this.Column1});
-            this.FunctionDeptDetails_dgv.ControlId = null;
+            this.colFunctionName,
+            this.colHeader,
+            this.colContent,
+            this.colStatus,
+            this.colComment,
+            this.colDateConfirm});
+            this.TranferRequest_dgv.ControlId = null;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,10 +150,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FunctionDeptDetails_dgv.DefaultCellStyle = dataGridViewCellStyle2;
-            this.FunctionDeptDetails_dgv.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FunctionDeptDetails_dgv.Location = new System.Drawing.Point(0, 232);
-            this.FunctionDeptDetails_dgv.Name = "FunctionDeptDetails_dgv";
+            this.TranferRequest_dgv.DefaultCellStyle = dataGridViewCellStyle2;
+            this.TranferRequest_dgv.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TranferRequest_dgv.Location = new System.Drawing.Point(0, 232);
+            this.TranferRequest_dgv.Name = "TranferRequest_dgv";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(180)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -149,9 +161,9 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FunctionDeptDetails_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.FunctionDeptDetails_dgv.Size = new System.Drawing.Size(1165, 356);
-            this.FunctionDeptDetails_dgv.TabIndex = 76;
+            this.TranferRequest_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.TranferRequest_dgv.Size = new System.Drawing.Size(1165, 356);
+            this.TranferRequest_dgv.TabIndex = 76;
             // 
             // colRequestId
             // 
@@ -171,17 +183,47 @@
             this.colFunctionDeptRequestCd.Name = "colFunctionDeptRequestCd";
             this.colFunctionDeptRequestCd.Width = 168;
             // 
-            // Column1
+            // colFunctionName
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 83;
+            this.colFunctionName.HeaderText = "Function Name";
+            this.colFunctionName.Name = "colFunctionName";
+            this.colFunctionName.Width = 116;
+            // 
+            // colHeader
+            // 
+            this.colHeader.HeaderText = "Header";
+            this.colHeader.Name = "colHeader";
+            this.colHeader.Width = 73;
+            // 
+            // colContent
+            // 
+            this.colContent.HeaderText = "Content";
+            this.colContent.Name = "colContent";
+            this.colContent.Width = 75;
+            // 
+            // colStatus
+            // 
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.Width = 67;
+            // 
+            // colComment
+            // 
+            this.colComment.HeaderText = "Comment";
+            this.colComment.Name = "colComment";
+            this.colComment.Width = 87;
+            // 
+            // colDateConfirm
+            // 
+            this.colDateConfirm.HeaderText = "Date Confirm";
+            this.colDateConfirm.Name = "colDateConfirm";
+            this.colDateConfirm.Width = 105;
             // 
             // TranferRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(1165, 588);
-            this.Controls.Add(this.FunctionDeptDetails_dgv);
+            this.Controls.Add(this.TranferRequest_dgv);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Delete_btn);
             this.Controls.Add(this.Update_btn);
@@ -194,8 +236,8 @@
             this.Controls.SetChildIndex(this.Update_btn, 0);
             this.Controls.SetChildIndex(this.Delete_btn, 0);
             this.Controls.SetChildIndex(this.Exit_btn, 0);
-            this.Controls.SetChildIndex(this.FunctionDeptDetails_dgv, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.FunctionDeptDetails_dgv)).EndInit();
+            this.Controls.SetChildIndex(this.TranferRequest_dgv, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.TranferRequest_dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,10 +248,15 @@
         private Framework.ButtonCommon Update_btn;
         private Framework.ButtonCommon Add_btn;
         private Framework.ButtonCommon Search_btn;
-        private Framework.DataGridViewCommon FunctionDeptDetails_dgv;
+        private Framework.DataGridViewCommon TranferRequest_dgv;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestId;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionDeptRequestCd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colContent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colComment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDateConfirm;
     }
 }
