@@ -44,7 +44,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                     RequestHeader = dataReader["vcb_header_request"].ToString(),
                     RequestContents = dataReader["vcb_contents_request"].ToString(),
                     //ProcessStatusCheck = dataReader["vcb_statuscheck_process"].ToString(),
-                    FunctionDeptName = dataReader["vcb_functiondept_name"].ToString(),
+                   
                     RequestDateTime = DateTime.Parse(dataReader["vcb_datetime_request"].ToString()),
                     //ProcessComments = dataReader["vcb_comments_process"].ToString(),
                     //ProcessDateTime = DateTime.Parse(dataReader["vcb_datetime_process"].ToString())

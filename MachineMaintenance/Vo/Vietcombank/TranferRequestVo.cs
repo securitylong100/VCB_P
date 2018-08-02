@@ -22,15 +22,15 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
 
         public string RegistrationUserCode { get; set; }
 
-        public string FunctionDeptCode { get; set; }
-        public string FunctionDeptName { get; set; }
-        public string UserName { get; set; }
         public string DepartmentCode { get; set; }
+        public string UserNameRequest { get; set; }
+       
+         public string FunctionDeptProcessCode { get; set; }
+        public string UserNameProcess { get; set; }
 
-        public string DepartmentName { get; set; }
 
         public int FunctionDeptId { get; set; }
-        public string   TypeList { get; set; }
+        public string TypeList { get; set; }
         /// <summary>
         /// get and set RegistrationDateTime
         /// </summary>

@@ -41,6 +41,7 @@
             this.colRequestCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFunctionDeptRequestCd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFunctionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRequestDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -137,6 +138,7 @@
             this.colRequestCode,
             this.colFunctionDeptRequestCd,
             this.colFunctionName,
+            this.colRequestDateTime,
             this.colHeader,
             this.colContent,
             this.colStatus,
@@ -174,12 +176,14 @@
             // 
             // colRequestCode
             // 
+            this.colRequestCode.DataPropertyName = "RequestCode";
             this.colRequestCode.HeaderText = "RequestCode";
             this.colRequestCode.Name = "colRequestCode";
             this.colRequestCode.Width = 109;
             // 
             // colFunctionDeptRequestCd
             // 
+            this.colFunctionDeptRequestCd.DataPropertyName = "FunctionDeptRequestCd";
             this.colFunctionDeptRequestCd.HeaderText = "FunctionDeptRequestCd";
             this.colFunctionDeptRequestCd.Name = "colFunctionDeptRequestCd";
             this.colFunctionDeptRequestCd.Width = 168;
@@ -190,6 +194,13 @@
             this.colFunctionName.HeaderText = "Function Name";
             this.colFunctionName.Name = "colFunctionName";
             this.colFunctionName.Width = 116;
+            // 
+            // colRequestDateTime
+            // 
+            this.colRequestDateTime.DataPropertyName = "RequestDateTime";
+            this.colRequestDateTime.HeaderText = "RequestDateTime";
+            this.colRequestDateTime.Name = "colRequestDateTime";
+            this.colRequestDateTime.Width = 133;
             // 
             // colHeader
             // 
@@ -237,7 +248,6 @@
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.Search_btn);
             this.Name = "TranferRequestForm";
-            this.TitleText = "FormCommon";
             this.Load += new System.EventHandler(this.TranferRequestForm_Load);
             this.Controls.SetChildIndex(this.Search_btn, 0);
             this.Controls.SetChildIndex(this.Add_btn, 0);
@@ -261,6 +271,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionDeptRequestCd;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFunctionName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRequestDateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn colHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn colContent;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;

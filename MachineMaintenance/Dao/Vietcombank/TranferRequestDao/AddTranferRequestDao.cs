@@ -27,8 +27,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
 
             sqlParameter.AddParameterInteger("vcb_code_request", inVo.RequestCode);
-            sqlParameter.AddParameterString("user_name", inVo.UserName);
-            sqlParameter.AddParameterInteger("vcb_functiondept_id_request", inVo.FunctionDeptRequestId);
+            sqlParameter.AddParameterString("user_name", inVo.UserNameRequest);
+         //   sqlParameter.AddParameterInteger("vcb_functiondept_id_request", inVo.FunctionDeptRequestId);
             sqlParameter.AddParameterString("vcb_header_request", inVo.RequestHeader);
             sqlParameter.AddParameterString("vcb_contents_request", inVo.RequestContents);
             sqlParameter.AddParameter("vcb_statuscheck_process", inVo.ProcessStatusCheck);
