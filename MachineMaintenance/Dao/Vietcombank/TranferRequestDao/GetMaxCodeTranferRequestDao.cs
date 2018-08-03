@@ -19,7 +19,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
         TranferRequestVo voList = new TranferRequestVo();
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, string.Empty);
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
-            sql.Append(@"select Case when Max(vcb_code_request) is null then 0 else Max(vcb_code_request) + 1 end maxcode from  vcb_tranfer_list ");   
+            sql.Append(@"select Case when Max(vcb_code_request) is null then 1 else Max(vcb_code_request) + 1 end maxcode from  vcb_tranfer_list ");   
            
 
 
