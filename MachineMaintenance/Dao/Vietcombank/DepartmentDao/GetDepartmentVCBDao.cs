@@ -41,7 +41,6 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 sql.Append(" and vcb_department_name = :vcb_department_name ");
                 sqlParameter.AddParameterString("vcb_department_name", inVo.DepartmentName);
             }
-           
 
             //create command
             //DbCommandAdaptor 

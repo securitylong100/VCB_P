@@ -47,6 +47,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         /// store AffectedCount
         /// </summary>
         public int AffectedCount { get; set; }
+        public int HienThi { get; set; }
+        public string TenHienThi { get; set; }
 
         public int CheckRow { get; set; }
 

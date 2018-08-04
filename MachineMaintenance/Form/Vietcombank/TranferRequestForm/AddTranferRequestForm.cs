@@ -31,17 +31,15 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             DeptCode_cmb.DisplayMember = "DepartmentCode";
             DeptCode_cmb.DataSource = machineserial.GetList();
             DeptCode_cmb.Text = "";
-
-
         }
 
 
         private void DeptCode_cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ValueObjectList<FunctionDeptVo> machineserial = (ValueObjectList<FunctionDeptVo>)DefaultCbmInvoker.Invoke(new SearchFunctionDeptVCBCbm(), new FunctionDeptVo() { DepartmentCode = DeptCode_cmb.Text, });
+            ValueObjectList<FunctionDeptVo> machineserial = (ValueObjectList<FunctionDeptVo>)DefaultCbmInvoker.Invoke(new SearchFunctionDeptVCBCbm(), new FunctionDeptVo() { DepartmentCode = DeptCode_cmb.Text, HienThi = 1, TenHienThi = UserData.GetUserData().UserName });
             FunctionCode_cmb.DisplayMember = "FunctionDeptCode";
             FunctionCode_cmb.DataSource = machineserial.GetList();
-            FunctionCode_cmb.Text = "";
+            FunctionCode_cmb.Text = "";//{  }
         }
 
         private void FunctionCode_cmb_SelectedIndexChanged(object sender, EventArgs e)

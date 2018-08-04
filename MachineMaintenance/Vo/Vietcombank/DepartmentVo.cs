@@ -35,11 +35,13 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         /// get and set FactoryCode
         /// </summary>
         public string FactoryCode { get; set; }
+       
 
         /// <summary>
         /// store AffectedCount
         /// </summary>
         public int AffectedCount { get; set; }
+        
 
         /// <summary>
         /// list of RankVo

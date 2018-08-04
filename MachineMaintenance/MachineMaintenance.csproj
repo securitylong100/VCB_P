@@ -187,8 +187,12 @@
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\DeleteDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\GetDepartmentVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\DepartmentCbm\UpdateDepartmentVCBCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\DeleteTransferRequestCbm.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\AddTranferListDao.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\AddTranferRequestCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\GetDepartMentCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\GetFunctionNameCbm.cs" />
+    <Compile Include="Cbm\Vietcombank\TranferRequestCbm\UpdateTransferVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\SearchTranferRequestVCBCbm.cs" />
     <Compile Include="Cbm\Vietcombank\TranferRequestCbm\GetMaxCodeTranferRequestCbm.cs" />
     <Compile Include="Cbm\WarehouseVTCbm\CheckIdAddFormVTCbm.cs" />
@@ -314,6 +318,7 @@
     <Compile Include="Dao\Account-WhDao\WareHouseDao\SearchListWareHouseDao.cs" />
     <Compile Include="Dao\Account-WhDao\WareHouseDao\SearchWareHouseDao.cs" />
     <Compile Include="Dao\Account-WhDao\WareHouseDao\UpdateWareHouseUserDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\DeleteTransferRequestDao.cs" />
     <Compile Include="Dao\Vietcombank\TranferRequestDao\AddTranferRequestDao.cs" />
     <Compile Include="Dao\Vietcombank\TranferRequestDao\AddTranferListDao.cs" />
     <Compile Include="Dao\Vietcombank\FunctionDeptDao\AddFunctionDeptVCBDao.cs" />
@@ -327,8 +332,11 @@
     <Compile Include="Dao\Vietcombank\DepartmentDao\DeleteDepartmentVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\DepartmentDao\GetDepartmentVCBDao.cs" />
     <Compile Include="Dao\Vietcombank\DepartmentDao\UpdateDepartmentVCBDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\GetDepartMentDao.cs" />
     <Compile Include="Dao\Vietcombank\TranferRequestDao\GetMaxCodeTranferRequestDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\GetFunctionNameDao.cs" />
     <Compile Include="Dao\Vietcombank\TranferRequestDao\SearchTranferRequestVCBDao.cs" />
+    <Compile Include="Dao\Vietcombank\TranferRequestDao\UpdateTransferVCBDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\AddListDatalostVTDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\AddNewListCheckVTDao.cs" />
     <Compile Include="Dao\WarehouseVTCheckDao\DeleteDatalostVTDao.cs" />

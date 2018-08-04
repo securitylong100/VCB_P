@@ -39,10 +39,15 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 sql.Append(" and b.vcb_department_cd = :vcb_department_cd ");
                 sqlParameter.AddParameterString("vcb_department_cd", inVo.DepartmentCode);
             }
-            if (!string.IsNullOrEmpty(inVo.UserName))
+            //if (!string.IsNullOrEmpty(inVo.UserName))
+            //{
+            //    sql.Append(" and c.user_name = :user_name ");
+            //    sqlParameter.AddParameterString("user_name", inVo.UserName);
+            //}
+            if(inVo.HienThi == 1)
             {
-                sql.Append(" and a.user_name = :user_name ");
-                sqlParameter.AddParameterString("user_name", inVo.UserName);
+                sql.Append(" and c.user_name != :tenhienthi");
+                sqlParameter.AddParameter("tenhienthi", inVo.TenHienThi);
             }
 
             //create command

@@ -62,11 +62,6 @@ D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Ma
 D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csprojResolveAssemblyReference.cache
 D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.MaintenanceMachineVTForm.resources
 D:\VT CP\mesVT\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMaintenanceMachineVTForm.resources
-D:\VCB\FW\NidecMES\Dll\MachineMaintenance.dll.config
-D:\VCB\FW\NidecMES\Dll\MachineMaintenance.dll
-D:\VCB\FW\NidecMES\Dll\MachineMaintenance.pdb
-D:\VCB\FW\NidecMES\Dll\vi\MachineMaintenance.resources.dll
-D:\VCB\FW\NidecMES\Dll\vi-VN\MachineMaintenance.resources.dll
 D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Interop.VBIDE.dll
 D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csproj.ResolveComReference.cache
 D:\VCB\VCB_P\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AccountCodeForm.resources
@@ -136,6 +131,11 @@ D:\FW\NidecMES\Dll\MachineMaintenance.dll
 D:\FW\NidecMES\Dll\MachineMaintenance.pdb
 D:\FW\NidecMES\Dll\vi\MachineMaintenance.resources.dll
 D:\FW\NidecMES\Dll\vi-VN\MachineMaintenance.resources.dll
+D:\VCB\fw\NidecMES\Dll\MachineMaintenance.dll.config
+D:\VCB\fw\NidecMES\Dll\MachineMaintenance.dll
+D:\VCB\fw\NidecMES\Dll\MachineMaintenance.pdb
+D:\VCB\fw\NidecMES\Dll\vi\MachineMaintenance.resources.dll
+D:\VCB\fw\NidecMES\Dll\vi-VN\MachineMaintenance.resources.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Interop.VBIDE.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\MachineMaintenance.csproj.ResolveComReference.cache
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AccountCodeForm.resources
@@ -171,6 +171,8 @@ D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMain
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.FunctionDepartmentForm.resources
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddDepartmentForm.resources
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.DepartmentForm.resources
+D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddTranferRequestForm.resources
+D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.TranferRequestForm.resources
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddCommentDatalostVT.resources
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddNewMachineVT.resources
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.AddMovingMachineVTForm.resources
@@ -199,6 +201,3 @@ D:\VCB\VCB_P\MachineMaintenance\obj\Debug\vi\MachineMaintenance.resources.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\vi-VN\MachineMaintenance.resources.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\MachineMaintenance.dll
 D:\VCB\VCB_P\MachineMaintenance\obj\Debug\MachineMaintenance.pdb
-D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.AddTranferRequestForm.resources
-D:\VCB\VCB_P\MachineMaintenance\obj\Debug\Com.Nidec.Mes.Common.Basic.MachineMaintenance.TranferRequestForm.resources
-D:\VCB\VCB_P\MachineMaintenance\obj\Debug\MachineMaintenance.csprojResolveAssemblyReference.cache

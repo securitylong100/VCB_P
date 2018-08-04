@@ -89,9 +89,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                 if (new AddFuntionDepartmentForm { functiondeptvo = selectedvo }.ShowDialog() == DialogResult.OK)
                 { GridBind(); }
             }
-
         }
-
         private void Delete_btn_Click(object sender, EventArgs e)
         {
             if (FunctionDeptDetails_dgv.Rows.Count > 0 && FunctionDeptDetails_dgv.DataSource != null)
@@ -99,7 +97,6 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                 try
                 {
                     if (MessageBox.Show("Do you want to delete this rows !", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-
                     {
                         FunctionDeptVo selectedvo = (FunctionDeptVo)FunctionDeptDetails_dgv.CurrentRow.DataBoundItem;
                         FunctionDeptVo outVo = new FunctionDeptVo();

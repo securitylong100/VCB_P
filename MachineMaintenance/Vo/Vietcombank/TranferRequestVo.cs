@@ -23,6 +23,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         public string RegistrationUserCode { get; set; }
 
         public string DepartmentCode { get; set; }
+        public string DepartmentName { get; set; }
         public string UserNameRequest { get; set; }
        
          public string FunctionDeptProcessCode { get; set; }
@@ -30,6 +31,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
 
 
         public int FunctionDeptId { get; set; }
+        public string FunctionDeptName { get; set; }
         public string TypeList { get; set; }
         /// <summary>
         /// get and set RegistrationDateTime
@@ -44,6 +46,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         /// <summary>
         /// store AffectedCount
         /// </summary>
+        public int SentReceive { get; set; }
         public int AffectedCount { get; set; }
 
 
