@@ -46,7 +46,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo
         /// <summary>
         /// store AffectedCount
         /// </summary>
-        public int SentReceive { get; set; }
+        public string SentReceive { get; set; }
         public int AffectedCount { get; set; }
 
 

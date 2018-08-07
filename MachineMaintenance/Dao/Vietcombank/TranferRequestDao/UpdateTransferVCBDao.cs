@@ -14,10 +14,10 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
     {
         public override ValueObject Execute(TransactionContext trxContext, ValueObject vo)
         {
-            FunctionDeptVo inVo = (FunctionDeptVo)vo;
+            TranferRequestVo inVo = (TranferRequestVo)vo;
             StringBuilder sql = new StringBuilder();
-            sql.Append("update vcb_trasfer_request set vcb_statuscheck_process =:vcb_statuscheck_process, vcb_comments_process =:vcb_comments_process, vcb_datetime_process =:vcb_datetime_process");
-            sql.Append(" where vcb_functiondept_id =:vcb_functiondept_id");
+            sql.Append("update vcb_trasfer_request set vcb_statuscheck_process =:vcb_statuscheck_process, vcb_comments_process =:vcb_comments_process, vcb_datetime_process = now() ");
+            sql.Append(" where vcb_id_request =:vcb_id_request");
             
             //create command
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
@@ -25,14 +25,14 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             //create parameter
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
 
-            sqlParameter.AddParameterString("vcb_functiondept_cd", inVo.FunctionDeptCode);
-            sqlParameter.AddParameterString("vcb_functiondept_name", inVo.FunctionDeptName);
-            sqlParameter.AddParameterString("user_name", inVo.UserName);
+            sqlParameter.AddParameter("vcb_statuscheck_process", inVo.ProcessStatusCheck);
+            sqlParameter.AddParameterString("vcb_comments_process", inVo.ProcessComments);
+            sqlParameter.AddParameterInteger("vcb_id_request", inVo.RequestId);
 
        
             //execute SQL
 
-            FunctionDeptVo outVo = new FunctionDeptVo
+            TranferRequestVo outVo = new TranferRequestVo
             {
                 AffectedCount = sqlCommandAdapter.ExecuteNonQuery(sqlParameter)
             };

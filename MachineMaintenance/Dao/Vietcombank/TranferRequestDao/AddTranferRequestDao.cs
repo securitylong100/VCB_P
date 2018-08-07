@@ -17,8 +17,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             TranferRequestVo inVo = (TranferRequestVo)vo;
 
             StringBuilder sql = new StringBuilder();
-            sql.Append("insert into vcb_trasfer_request(vcb_code_request, vcb_functiondept_id_request, vcb_datetime_request,vcb_header_request, vcb_contents_request,vcb_statuscheck_process ) ");
-            sql.Append(" select :vcb_code_request, (select vcb_functiondept_id from vcb_functiondept where user_name = :user_name), now(), :vcb_header_request, :vcb_contents_request, :vcb_statuscheck_process ");
+            sql.Append("insert into vcb_trasfer_request(vcb_code_request, vcb_functiondept_id_request, vcb_datetime_request,vcb_header_request, vcb_contents_request,vcb_statuscheck_process,vcb_comments_process,vcb_datetime_process ) ");
+            sql.Append(" select :vcb_code_request, (select vcb_functiondept_id from vcb_functiondept where user_name = :user_name), now(), :vcb_header_request, :vcb_contents_request, :vcb_statuscheck_process, :vcb_comments_process, now() ");
 
             //create command
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
@@ -32,6 +32,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             sqlParameter.AddParameterString("vcb_header_request", inVo.RequestHeader);
             sqlParameter.AddParameterString("vcb_contents_request", inVo.RequestContents);
             sqlParameter.AddParameter("vcb_statuscheck_process", inVo.ProcessStatusCheck);
+            sqlParameter.AddParameterString("vcb_comments_process", inVo.ProcessComments);
 
 
             //execute SQL

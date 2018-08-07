@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 using Com.Nidec.Mes.Framework;
 using Com.Nidec.Mes.GlobalMasterMaintenance.Cbm;
 using Com.Nidec.Mes.GlobalMasterMaintenance.Vo;
@@ -25,9 +26,30 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
 
         private void Search_btn_Click(object sender, EventArgs e)
         {
-            GridBind(3);
+            GridBind();
+            alarmcolor();
         }
-        private void GridBind(int sent_reiceive)
+        void alarmcolor()
+        {
+            if (TranferRequest_dgv.RowCount > 0)
+            {
+
+                for (int i = 0; i < TranferRequest_dgv.RowCount; i++)
+
+                {
+                    if (sent_rei_cmb.Text == "Sent" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "To")
+                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                    if (sent_rei_cmb.Text == "Received" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "To")
+                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    if (sent_rei_cmb.Text == "Received" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
+                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                }
+
+            }
+
+
+        }
+        private void GridBind()
         {
             try
             {
@@ -35,7 +57,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                 {
                     FunctionDeptName = function_cmb.Text,
                     DepartmentName = department_cbm.Text,
-                    SentReceive = sent_reiceive,
+                    SentReceive = sent_rei_cmb.Text,
                 };
                 ValueObjectList<TranferRequestVo> listvo = (ValueObjectList<TranferRequestVo>)DefaultCbmInvoker.Invoke(new Cbm.SearchTranferRequestVCBCbm(), invo);
                 TranferRequest_dgv.DataSource = listvo.GetList();
@@ -59,7 +81,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             department_cbm.DataSource = department.GetList();
             department_cbm.DisplayMember = "DepartmentName";
             department_cbm.Text = "";
-            GridBind(3);
+            GridBind();
+            alarmcolor();
         }
 
         private void Delete_btn_Click(object sender, EventArgs e)
@@ -82,7 +105,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                                 logger.Info(messageData);
                                 popUpMessage.Information(messageData, Text);
                             }
-                            GridBind(3);
+                            GridBind();
                         }
                     }
                     else
@@ -90,26 +113,30 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                         MessageBox.Show("Bạn không có quyền xóa dòng này !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-                catch
+                catch (Framework.ApplicationException exception)
                 {
-
+                    popUpMessage.ApplicationError(exception.GetMessageData(), Text);
+                    logger.Error(exception.GetMessageData());
                 }
             }
         }
 
         private void Update_btn_Click(object sender, EventArgs e)
         {
+            if (TranferRequest_dgv.RowCount > 0 && sent_rei_cmb.Text == "Received")
+            {
+                TranferRequestVo updatevo = (TranferRequestVo)TranferRequest_dgv.CurrentRow.DataBoundItem;
+                if (updatevo.TypeList == "To")
+                {
+                    TranferRequestVo update = (TranferRequestVo)DefaultCbmInvoker.Invoke(new UpdateTransferVCBCbm(), updatevo);
 
-        }
+                }
 
-        private void sent_btn_Click(object sender, EventArgs e)//SentReceive = 1
-        {
-            GridBind(1);
-        }
-
-        private void receive_btn_Click(object sender, EventArgs e)
-        {
-            GridBind(2);
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền Update dòng này !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void TranferRequest_dgv_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -117,28 +144,14 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             int rowIndex = TranferRequest_dgv.CurrentCell.RowIndex;
             //if(TranferRequest_dgv.Rows[rowIndex].Cells["colStatus"].Selected)
             //{
-                DataGridViewCheckBoxCell cellkbox = TranferRequest_dgv.Rows[rowIndex].Cells["colStatus"] as DataGridViewCheckBoxCell;
-                if(cellkbox != null)
+            DataGridViewCheckBoxCell cellkbox = TranferRequest_dgv.Rows[rowIndex].Cells["colStatus"] as DataGridViewCheckBoxCell;
+            if (cellkbox != null)
+            {
+                if (cellkbox.Value == cellkbox.TrueValue)
                 {
-                    if(cellkbox.Value == cellkbox.TrueValue)
-                    {
-                        MessageBox.Show(cellkbox.Value.ToString());
-                    }
+                    MessageBox.Show(cellkbox.Value.ToString());
                 }
-                
-                //string a = TranferRequest_dgv.Rows[rowIndex].Cells["colStatus"].Value.ToString();
-                //if (bool.Parse(TranferRequest_dgv.Rows[rowIndex].Cells["colStatus"].Value.ToString()) == false)
-                //{
-                //    DateTime dt = DateTime.Now;
-                //    TranferRequest_dgv.Rows[rowIndex].Cells["colDateConfirm"].Value = dt;
-                //}
-                //else if (bool.Parse(TranferRequest_dgv.Rows[rowIndex].Cells["colStatus"].Value.ToString()) == true)
-                //{
-                //    TranferRequest_dgv.Rows[rowIndex].Cells["colDateConfirm"].Value = "";
-                //}
-            //}
+            }
         }
     }
-
-
 }

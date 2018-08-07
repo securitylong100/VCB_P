@@ -54,14 +54,13 @@
             this.functionname_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
             this.department_cbm = new Com.Nidec.Mes.Framework.ComboBoxCommon();
             this.department_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
-            this.sent_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
-            this.receive_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
+            this.sent_rei_cmb = new Com.Nidec.Mes.Framework.ComboBoxCommon();
+            this.sent_rei_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
             ((System.ComponentModel.ISupportInitialize)(this.TranferRequest_dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // Exit_btn
             // 
-            this.Exit_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Exit_btn.BackColor = System.Drawing.SystemColors.Control;
             this.Exit_btn.ControlId = null;
             this.Exit_btn.Font = new System.Drawing.Font("Arial", 9F);
@@ -75,7 +74,6 @@
             // 
             // Delete_btn
             // 
-            this.Delete_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Delete_btn.BackColor = System.Drawing.SystemColors.Control;
             this.Delete_btn.ControlId = null;
             this.Delete_btn.Font = new System.Drawing.Font("Arial", 9F);
@@ -85,12 +83,11 @@
             this.Delete_btn.Size = new System.Drawing.Size(80, 33);
             this.Delete_btn.TabIndex = 21;
             this.Delete_btn.Text = "Delete";
-            this.Delete_btn.UseVisualStyleBackColor = true;
+            this.Delete_btn.UseVisualStyleBackColor = false;
             this.Delete_btn.Click += new System.EventHandler(this.Delete_btn_Click);
             // 
             // Update_btn
             // 
-            this.Update_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Update_btn.BackColor = System.Drawing.SystemColors.Control;
             this.Update_btn.ControlId = null;
             this.Update_btn.Font = new System.Drawing.Font("Arial", 9F);
@@ -134,6 +131,9 @@
             // TranferRequest_dgv
             // 
             this.TranferRequest_dgv.AllowUserToAddRows = false;
+            this.TranferRequest_dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TranferRequest_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.TranferRequest_dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -167,7 +167,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TranferRequest_dgv.DefaultCellStyle = dataGridViewCellStyle2;
-            this.TranferRequest_dgv.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.TranferRequest_dgv.Location = new System.Drawing.Point(0, 213);
             this.TranferRequest_dgv.Name = "TranferRequest_dgv";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -178,6 +177,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.TranferRequest_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.TranferRequest_dgv.RowHeadersWidth = 15;
             this.TranferRequest_dgv.Size = new System.Drawing.Size(1165, 375);
             this.TranferRequest_dgv.TabIndex = 76;
             this.TranferRequest_dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TranferRequest_dgv_CellClick);
@@ -237,7 +237,7 @@
             this.colType.DataPropertyName = "TypeList";
             this.colType.HeaderText = "Type";
             this.colType.Name = "colType";
-            this.colType.Width = 58;
+            this.colType.Width = 57;
             // 
             // colHeader
             // 
@@ -264,7 +264,7 @@
             // 
             // colComment
             // 
-            this.colComment.DataPropertyName = "ProcessComments ";
+            this.colComment.DataPropertyName = "ProcessComments";
             this.colComment.HeaderText = "Comment";
             this.colComment.Name = "colComment";
             this.colComment.Width = 87;
@@ -316,44 +316,42 @@
             this.department_lbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.department_lbl.Location = new System.Drawing.Point(204, 117);
             this.department_lbl.Name = "department_lbl";
-            this.department_lbl.Size = new System.Drawing.Size(72, 15);
+            this.department_lbl.Size = new System.Drawing.Size(122, 15);
             this.department_lbl.TabIndex = 81;
-            this.department_lbl.Text = "Department";
+            this.department_lbl.Text = "Department Request";
             // 
-            // sent_btn
+            // sent_rei_cmb
             // 
-            this.sent_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.sent_btn.ControlId = null;
-            this.sent_btn.Font = new System.Drawing.Font("Arial", 9F);
-            this.sent_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.sent_btn.Location = new System.Drawing.Point(0, 237);
-            this.sent_btn.Name = "sent_btn";
-            this.sent_btn.Size = new System.Drawing.Size(41, 33);
-            this.sent_btn.TabIndex = 83;
-            this.sent_btn.Text = "Sent";
-            this.sent_btn.UseVisualStyleBackColor = true;
-            this.sent_btn.Click += new System.EventHandler(this.sent_btn_Click);
+            this.sent_rei_cmb.ControlId = null;
+            this.sent_rei_cmb.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sent_rei_cmb.FormattingEnabled = true;
+            this.sent_rei_cmb.Items.AddRange(new object[] {
+            "Sent",
+            "Received"});
+            this.sent_rei_cmb.Location = new System.Drawing.Point(371, 135);
+            this.sent_rei_cmb.Name = "sent_rei_cmb";
+            this.sent_rei_cmb.Size = new System.Drawing.Size(128, 23);
+            this.sent_rei_cmb.TabIndex = 86;
+            this.sent_rei_cmb.Text = "Received";
             // 
-            // receive_btn
+            // sent_rei_lbl
             // 
-            this.receive_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.receive_btn.ControlId = null;
-            this.receive_btn.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receive_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.receive_btn.Location = new System.Drawing.Point(0, 271);
-            this.receive_btn.Name = "receive_btn";
-            this.receive_btn.Size = new System.Drawing.Size(41, 33);
-            this.receive_btn.TabIndex = 84;
-            this.receive_btn.Text = "Receive";
-            this.receive_btn.UseVisualStyleBackColor = true;
-            this.receive_btn.Click += new System.EventHandler(this.receive_btn_Click);
+            this.sent_rei_lbl.AutoSize = true;
+            this.sent_rei_lbl.ControlId = null;
+            this.sent_rei_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.sent_rei_lbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.sent_rei_lbl.Location = new System.Drawing.Point(368, 117);
+            this.sent_rei_lbl.Name = "sent_rei_lbl";
+            this.sent_rei_lbl.Size = new System.Drawing.Size(86, 15);
+            this.sent_rei_lbl.TabIndex = 85;
+            this.sent_rei_lbl.Text = "Sent/Received";
             // 
             // TranferRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(1165, 588);
-            this.Controls.Add(this.receive_btn);
-            this.Controls.Add(this.sent_btn);
+            this.Controls.Add(this.sent_rei_cmb);
+            this.Controls.Add(this.sent_rei_lbl);
             this.Controls.Add(this.department_cbm);
             this.Controls.Add(this.department_lbl);
             this.Controls.Add(this.function_cmb);
@@ -377,8 +375,8 @@
             this.Controls.SetChildIndex(this.function_cmb, 0);
             this.Controls.SetChildIndex(this.department_lbl, 0);
             this.Controls.SetChildIndex(this.department_cbm, 0);
-            this.Controls.SetChildIndex(this.sent_btn, 0);
-            this.Controls.SetChildIndex(this.receive_btn, 0);
+            this.Controls.SetChildIndex(this.sent_rei_lbl, 0);
+            this.Controls.SetChildIndex(this.sent_rei_cmb, 0);
             ((System.ComponentModel.ISupportInitialize)(this.TranferRequest_dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -396,6 +394,8 @@
         private Framework.LabelCommon functionname_lbl;
         private Framework.ComboBoxCommon department_cbm;
         private Framework.LabelCommon department_lbl;
+        private Framework.ComboBoxCommon sent_rei_cmb;
+        private Framework.LabelCommon sent_rei_lbl;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestId;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn colUserNameRequest;
@@ -409,7 +409,5 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn colStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn colComment;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDateConfirm;
-        private Framework.ButtonCommon sent_btn;
-        private Framework.ButtonCommon receive_btn;
     }
 }

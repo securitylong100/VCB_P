@@ -120,6 +120,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                     RequestHeader = headerinfo_txt.Text,
                     RequestContents = contentinfo_txt.Text,
                     ProcessStatusCheck = false,
+                    ProcessComments = "",
+
                 };
                 outvoTranfer = (TranferRequestVo)DefaultCbmInvoker.Invoke(new Cbm.AddTranferRequestCbm(), invoTranfer);
 

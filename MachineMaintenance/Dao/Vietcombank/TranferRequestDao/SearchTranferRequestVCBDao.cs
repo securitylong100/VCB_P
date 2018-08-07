@@ -37,19 +37,16 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 sql.Append(" and c.vcb_department_name = :vcb_department_name ");
                 sqlParameter.AddParameterString("vcb_department_name", inVo.DepartmentName);
             }
-            if (inVo.SentReceive > 0)
+            if (!string.IsNullOrEmpty(inVo.SentReceive))
             {
-                if(inVo.SentReceive ==1)//sent
+                if(inVo.SentReceive == "Sent")//sent
                 {
                     sql.Append(" and b.user_name = '" + UserData.GetUserData().UserName + "'");
                 }
-                else if(inVo.SentReceive ==2)//receive
+                else if(inVo.SentReceive == "Received")//receive
+                    
                 {
                     sql.Append(" and e.user_name = '" + UserData.GetUserData().UserName + "'");
-                }
-                else if (inVo.SentReceive == 3)
-                {
-                    sql.Append(" and b.user_name = '" + UserData.GetUserData().UserName + "' or e.user_name = '" + UserData.GetUserData().UserName + "' ");
                 }
             }           
 
@@ -73,8 +70,9 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                     RequestHeader = dataReader["vcb_header_request"].ToString(),
                     RequestContents = dataReader["vcb_contents_request"].ToString(),
 
-                    //ProcessComments = dataReader["vcb_comments_process"].ToString(),
-                    //ProcessDateTime = DateTime.Parse(dataReader["vcb_datetime_process"].ToString())
+                    ProcessStatusCheck = Convert.ToBoolean(dataReader["vcb_statuscheck_process"]),
+                    ProcessComments = dataReader["vcb_comments_process"].ToString(),
+                    ProcessDateTime = DateTime.Parse(dataReader["vcb_datetime_process"].ToString())
                 };
                 voList.add(outVo);
             }
