@@ -28,26 +28,42 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
         {
             GridBind();
             alarmcolor();
+            editGridBindsent();
+        }
+        void editGridBindsent()
+        {
+            if (TranferRequest_dgv.RowCount > 1 && sent_rei_cmb.Text == "Sent")
+                for (int i = 0; i < TranferRequest_dgv.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < TranferRequest_dgv.ColumnCount; j++)
+                    {
+                        if (j != 7)
+                        {
+                            if (TranferRequest_dgv.Rows[i].Cells[j].Value.ToString() == TranferRequest_dgv.Rows[i + 1].Cells[j].Value.ToString())
+                            {
+                                if (TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
+                                    TranferRequest_dgv.Rows.RemoveAt(this.TranferRequest_dgv.SelectedRows[i].Index);
+                            }
+                        }
+                    }
+                }
+
         }
         void alarmcolor()
         {
             if (TranferRequest_dgv.RowCount > 0)
             {
-
                 for (int i = 0; i < TranferRequest_dgv.RowCount; i++)
 
                 {
-                    if (sent_rei_cmb.Text == "Sent" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "To")
-                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
-                    if (sent_rei_cmb.Text == "Received" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "To")
-                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    if (sent_rei_cmb.Text == "Received" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
-                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                    if (sent_rei_cmb.Text == "Sent" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "To") //mail sent chua check
+                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(0, 206, 209);
+                    if (sent_rei_cmb.Text == "Received" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "To")//mail nhan ma chua check cua to
+                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(255, 69, 0);
+                    if (sent_rei_cmb.Text == "Received" && TranferRequest_dgv.Rows[i].Cells["colStatus"].Value.ToString() == "False" && TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")//mail nhan ma chua check cua cc
+                        TranferRequest_dgv.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(255, 193, 37);
                 }
-
             }
-
-
         }
         private void GridBind()
         {
