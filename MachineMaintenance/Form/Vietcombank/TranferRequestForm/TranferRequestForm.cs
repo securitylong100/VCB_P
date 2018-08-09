@@ -40,7 +40,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                         if (j != 7)
                         {
                             if (TranferRequest_dgv.Rows[i].Cells[j].Value.ToString() == TranferRequest_dgv.Rows[i + 1].Cells[j].Value.ToString())
-                            {
+                            { //
                                 if (TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
                                     TranferRequest_dgv.Rows.RemoveAt(this.TranferRequest_dgv.SelectedRows[i].Index);
                             }
