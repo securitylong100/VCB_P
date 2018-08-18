@@ -37,25 +37,25 @@
             this.Add_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Search_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.TranferRequest_dgv = new Com.Nidec.Mes.Framework.DataGridViewCommon();
-            this.colRequestId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRequestCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUserNameRequest = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRequestDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUserNameProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFunction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDateConfirm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.function_cmb = new Com.Nidec.Mes.Framework.ComboBoxCommon();
             this.functionname_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
             this.department_cbm = new Com.Nidec.Mes.Framework.ComboBoxCommon();
             this.department_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
             this.sent_rei_cmb = new Com.Nidec.Mes.Framework.ComboBoxCommon();
             this.sent_rei_lbl = new Com.Nidec.Mes.Framework.LabelCommon();
+            this.colRequestId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRequestCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colUserNameRequest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRequestDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colUserNameProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFunction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDateConfirm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.TranferRequest_dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,13 +147,13 @@
             this.TranferRequest_dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colRequestId,
             this.colRequestCode,
+            this.colHeader,
             this.colUserNameRequest,
             this.colDepartment,
             this.colRequestDateTime,
             this.colUserNameProcess,
             this.colFunction,
             this.colType,
-            this.colHeader,
             this.colContent,
             this.colStatus,
             this.colComment,
@@ -181,100 +181,6 @@
             this.TranferRequest_dgv.Size = new System.Drawing.Size(1165, 375);
             this.TranferRequest_dgv.TabIndex = 76;
             this.TranferRequest_dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TranferRequest_dgv_CellClick);
-            // 
-            // colRequestId
-            // 
-            this.colRequestId.DataPropertyName = "RequestId";
-            this.colRequestId.HeaderText = "RequestId";
-            this.colRequestId.Name = "colRequestId";
-            this.colRequestId.Visible = false;
-            this.colRequestId.Width = 89;
-            // 
-            // colRequestCode
-            // 
-            this.colRequestCode.DataPropertyName = "RequestCode";
-            this.colRequestCode.HeaderText = "RequestCode";
-            this.colRequestCode.Name = "colRequestCode";
-            this.colRequestCode.Width = 109;
-            // 
-            // colUserNameRequest
-            // 
-            this.colUserNameRequest.DataPropertyName = "UserNameRequest";
-            this.colUserNameRequest.HeaderText = "User Request";
-            this.colUserNameRequest.Name = "colUserNameRequest";
-            this.colUserNameRequest.Width = 109;
-            // 
-            // colDepartment
-            // 
-            this.colDepartment.DataPropertyName = "DepartmentName";
-            this.colDepartment.HeaderText = "Department Request";
-            this.colDepartment.Name = "colDepartment";
-            this.colDepartment.Width = 147;
-            // 
-            // colRequestDateTime
-            // 
-            this.colRequestDateTime.DataPropertyName = "RequestDateTime";
-            this.colRequestDateTime.HeaderText = "DateTime Request";
-            this.colRequestDateTime.Name = "colRequestDateTime";
-            this.colRequestDateTime.Width = 136;
-            // 
-            // colUserNameProcess
-            // 
-            this.colUserNameProcess.DataPropertyName = "UserNameProcess";
-            this.colUserNameProcess.HeaderText = "User Name Process";
-            this.colUserNameProcess.Name = "colUserNameProcess";
-            this.colUserNameProcess.Width = 145;
-            // 
-            // colFunction
-            // 
-            this.colFunction.DataPropertyName = "FunctionDeptName";
-            this.colFunction.HeaderText = "Function";
-            this.colFunction.Name = "colFunction";
-            this.colFunction.Width = 79;
-            // 
-            // colType
-            // 
-            this.colType.DataPropertyName = "TypeList";
-            this.colType.HeaderText = "Type";
-            this.colType.Name = "colType";
-            this.colType.Width = 57;
-            // 
-            // colHeader
-            // 
-            this.colHeader.DataPropertyName = "RequestHeader";
-            this.colHeader.HeaderText = "Header";
-            this.colHeader.Name = "colHeader";
-            this.colHeader.Width = 73;
-            // 
-            // colContent
-            // 
-            this.colContent.DataPropertyName = "RequestContents";
-            this.colContent.HeaderText = "Content";
-            this.colContent.Name = "colContent";
-            this.colContent.Width = 75;
-            // 
-            // colStatus
-            // 
-            this.colStatus.DataPropertyName = "ProcessStatusCheck";
-            this.colStatus.HeaderText = "Status";
-            this.colStatus.Name = "colStatus";
-            this.colStatus.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.colStatus.Width = 67;
-            // 
-            // colComment
-            // 
-            this.colComment.DataPropertyName = "ProcessComments";
-            this.colComment.HeaderText = "Comment";
-            this.colComment.Name = "colComment";
-            this.colComment.Width = 87;
-            // 
-            // colDateConfirm
-            // 
-            this.colDateConfirm.DataPropertyName = "ProcessDateTime";
-            this.colDateConfirm.HeaderText = "Date Confirm";
-            this.colDateConfirm.Name = "colDateConfirm";
-            this.colDateConfirm.Width = 105;
             // 
             // function_cmb
             // 
@@ -346,6 +252,101 @@
             this.sent_rei_lbl.TabIndex = 85;
             this.sent_rei_lbl.Text = "Sent/Received";
             // 
+            // colRequestId
+            // 
+            this.colRequestId.DataPropertyName = "RequestId";
+            this.colRequestId.HeaderText = "RequestId";
+            this.colRequestId.Name = "colRequestId";
+            this.colRequestId.Visible = false;
+            this.colRequestId.Width = 89;
+            // 
+            // colRequestCode
+            // 
+            this.colRequestCode.DataPropertyName = "RequestCode";
+            this.colRequestCode.HeaderText = "RequestCode";
+            this.colRequestCode.Name = "colRequestCode";
+            this.colRequestCode.Visible = false;
+            this.colRequestCode.Width = 109;
+            // 
+            // colHeader
+            // 
+            this.colHeader.DataPropertyName = "RequestHeader";
+            this.colHeader.HeaderText = "Header";
+            this.colHeader.Name = "colHeader";
+            this.colHeader.Width = 73;
+            // 
+            // colUserNameRequest
+            // 
+            this.colUserNameRequest.DataPropertyName = "UserNameRequest";
+            this.colUserNameRequest.HeaderText = "User Request";
+            this.colUserNameRequest.Name = "colUserNameRequest";
+            this.colUserNameRequest.Width = 109;
+            // 
+            // colDepartment
+            // 
+            this.colDepartment.DataPropertyName = "DepartmentName";
+            this.colDepartment.HeaderText = "Department Request";
+            this.colDepartment.Name = "colDepartment";
+            this.colDepartment.Width = 147;
+            // 
+            // colRequestDateTime
+            // 
+            this.colRequestDateTime.DataPropertyName = "RequestDateTime";
+            this.colRequestDateTime.HeaderText = "DateTime Request";
+            this.colRequestDateTime.Name = "colRequestDateTime";
+            this.colRequestDateTime.Width = 136;
+            // 
+            // colUserNameProcess
+            // 
+            this.colUserNameProcess.DataPropertyName = "UserNameProcess";
+            this.colUserNameProcess.HeaderText = "User Name Process";
+            this.colUserNameProcess.Name = "colUserNameProcess";
+            this.colUserNameProcess.Width = 145;
+            // 
+            // colFunction
+            // 
+            this.colFunction.DataPropertyName = "FunctionDeptName";
+            this.colFunction.HeaderText = "Function";
+            this.colFunction.Name = "colFunction";
+            this.colFunction.Width = 79;
+            // 
+            // colType
+            // 
+            this.colType.DataPropertyName = "TypeList";
+            this.colType.HeaderText = "Type";
+            this.colType.Name = "colType";
+            this.colType.Width = 58;
+            // 
+            // colContent
+            // 
+            this.colContent.DataPropertyName = "RequestContents";
+            this.colContent.HeaderText = "Content";
+            this.colContent.Name = "colContent";
+            this.colContent.Width = 75;
+            // 
+            // colStatus
+            // 
+            this.colStatus.DataPropertyName = "ProcessStatusCheck";
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.colStatus.Width = 67;
+            // 
+            // colComment
+            // 
+            this.colComment.DataPropertyName = "ProcessComments";
+            this.colComment.HeaderText = "Comment";
+            this.colComment.Name = "colComment";
+            this.colComment.Width = 87;
+            // 
+            // colDateConfirm
+            // 
+            this.colDateConfirm.DataPropertyName = "ProcessDateTime";
+            this.colDateConfirm.HeaderText = "Date Confirm";
+            this.colDateConfirm.Name = "colDateConfirm";
+            this.colDateConfirm.Width = 105;
+            // 
             // TranferRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,13 +399,13 @@
         private Framework.LabelCommon sent_rei_lbl;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestId;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn colUserNameRequest;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDepartment;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRequestDateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn colUserNameProcess;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFunction;
         private System.Windows.Forms.DataGridViewTextBoxColumn colType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn colContent;
         private System.Windows.Forms.DataGridViewCheckBoxColumn colStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn colComment;

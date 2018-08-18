@@ -48,7 +48,8 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 {
                     sql.Append(" and e.user_name = '" + UserData.GetUserData().UserName + "'");
                 }
-            }           
+            }
+            sql.Append(" order by a.vcb_code_request desc, d.vcb_type_list !='To' ");    
 
             sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
 

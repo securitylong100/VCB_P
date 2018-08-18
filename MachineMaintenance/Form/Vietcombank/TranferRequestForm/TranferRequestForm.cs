@@ -30,24 +30,60 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
             alarmcolor();
             editGridBindsent();
         }
+        bool IsTheSameCellValue(int row)
+        {
+            DataGridViewCell cell1 = TranferRequest_dgv[1, row];
+            DataGridViewCell cell2 = TranferRequest_dgv[1, row + 1];
+            if (cell1.Value == null || cell2.Value == null)
+            {
+                return false;
+            }
+            return cell1.Value.ToString() == cell2.Value.ToString();
+        }
         void editGridBindsent()
         {
             if (TranferRequest_dgv.RowCount > 1 && sent_rei_cmb.Text == "Sent")
-                for (int i = 0; i < TranferRequest_dgv.RowCount - 1; i++)
+            {
+                int rowIdRequest = 0;
+                string user = "";
+                CurrencyManager currencyManager1 = (CurrencyManager)BindingContext[TranferRequest_dgv.DataSource];
+                currencyManager1.SuspendBinding();
+                for (int i = 0; i <= TranferRequest_dgv.RowCount - 2; i++)
                 {
-                    for (int j = 0; j < TranferRequest_dgv.ColumnCount; j++)
+                    if (IsTheSameCellValue(i))
                     {
-                        if (j != 7)
+                        if (TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
                         {
-                            if (TranferRequest_dgv.Rows[i].Cells[j].Value.ToString() == TranferRequest_dgv.Rows[i + 1].Cells[j].Value.ToString())
-                            { //
-                                if (TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
-                                    TranferRequest_dgv.Rows.RemoveAt(this.TranferRequest_dgv.SelectedRows[i].Index);
-                            }
+                            TranferRequest_dgv.Rows[i].Visible = false;
+                            currencyManager1.ResumeBinding();
+                            user = user + ", " + TranferRequest_dgv.Rows[i].Cells["colUserNameProcess"].Value.ToString();
                         }
+                        if (i == TranferRequest_dgv.RowCount - 2)
+                        {
+                            string user0 = "To: " + TranferRequest_dgv.Rows[rowIdRequest].Cells["colUserNameProcess"].Value.ToString() + " / cc: ";
+                            TranferRequest_dgv.Rows[i + 1].Visible = false;
+                            TranferRequest_dgv.Rows[rowIdRequest].Cells["colUserNameProcess"].Value = user0 + user + ", " + TranferRequest_dgv.Rows[i+1].Cells["colUserNameProcess"].Value.ToString();
+                            user = "";
+                        }
+                    } 
+                    else if (!IsTheSameCellValue(i))
+                    {
+                        if (TranferRequest_dgv.Rows[i].Cells["colType"].Value.ToString() == "cc")
+                        {
+                            TranferRequest_dgv.Rows[i].Visible = false;
+                            currencyManager1.ResumeBinding();
+                            user = user + ", " + TranferRequest_dgv.Rows[i].Cells["colUserNameProcess"].Value.ToString();
+                        }
+                        if (rowIdRequest >= 0)//
+                        {
+                            string user0 = "To: " + TranferRequest_dgv.Rows[rowIdRequest].Cells["colUserNameProcess"].Value.ToString() + " / cc: ";
+                            TranferRequest_dgv.Rows[rowIdRequest].Cells["colUserNameProcess"].Value = user0 + user;
+                            user = "";
+                        }
+                        rowIdRequest = i + 1;//lay hang 'To'
                     }
                 }
-
+            }
         }
         void alarmcolor()
         {
@@ -121,7 +157,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance
                                 logger.Info(messageData);
                                 popUpMessage.Information(messageData, Text);
                             }
-                            GridBind();
+                            Search_btn_Click(sender, e);
                         }
                     }
                     else
